@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen bg-[#eef4ff] font-sans text-[#1d2a44]">
+<body class="min-h-screen bg-[#F0F4FF] font-sans text-[#1d2a44]">
 
     <!-- Page Layout Section -->
     <div
@@ -16,15 +16,15 @@
 
         <!-- Sidebar Section -->
         <aside
-            class="flex w-[240px] flex-col gap-3.5 border-r border-blue-600/15 bg-white/95 px-3.5 py-[15px] max-[1100px]:w-[86px] max-[1100px]:px-2.5 max-[720px]:h-auto max-[720px]:w-full max-[720px]:flex-row max-[720px]:items-center max-[720px]:overflow-x-auto max-[720px]:border-r-0 max-[720px]:border-b">
+            class="flex h-[997px] w-[240px] flex-col gap-3.5 border-r border-[#2563EB]/10 bg-white/95 px-[8px] pt-0 pb-[15px] max-[1100px]:w-[86px] max-[1100px]:px-2.5 max-[720px]:h-auto max-[720px]:w-full max-[720px]:flex-row max-[720px]:items-center max-[720px]:overflow-x-auto max-[720px]:border-r-0 max-[720px]:border-b">
 
             <!-- Logo Section -->
-            <div class="flex min-h-[42px] items-center">
-                <img src="{{ asset('img/NorHealLogo.png') }}" alt="NorHeal Logo" class="h-8 w-[130px] object-contain">
+            <div class="-mx-[8px] flex h-[64px] w-[239px] items-center gap-[8px] border-b border-[#2563EB]/10 pr-[16px] pl-[16px]">
+                <img src="{{ asset('img/NorHealLogo.png') }}" alt="NorHeal Logo" class="h-[32px] w-auto object-contain">
 
                 <div
-                    class="ml-auto grid size-[22px] place-items-center rounded-full bg-blue-50 text-blue-300 max-[1100px]:hidden">
-                    <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor" stroke-width="2">
+                    class="ml-auto grid size-[32px] place-items-center rounded-full bg-[#F1F5FF] text-[#2563EB] max-[1100px]:hidden">
+                    <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="m15 18-6-6 6-6" />
                     </svg>
                 </div>
@@ -34,14 +34,15 @@
             <nav class="flex-1 overflow-auto pr-0.5 max-[720px]:flex max-[720px]:overflow-visible">
 
                 <!-- Sidebar Overview Menu -->
-                <div class="my-3 max-[720px]:my-0 max-[720px]:flex">
+                <div class="mb-3 mt-1 max-[720px]:my-0 max-[720px]:flex">
                     <p class="mb-1.5 ml-0.5 text-[8px] font-bold uppercase text-[#7890ad] max-[1100px]:hidden">Overview
                     </p>
                     <a href="#"
-                        class="relative flex h-[30px] items-center gap-[9px] rounded-[15px] bg-[#f1f4fb] px-2.5 text-[11px] font-semibold text-blue-600 after:absolute after:right-2.5 after:size-[5px] after:rounded-full after:bg-orange-500 [&_svg]:size-[13px] [&_svg]:text-blue-600 max-[1100px]:justify-center max-[1100px]:px-0">
+                        class="relative flex h-[35.5px] w-[223px] items-center gap-[8px] rounded-[20px] pt-[8px] pr-[10px] pb-[8px] pl-[10px] text-[11px] font-semibold text-blue-600 after:absolute after:right-2.5 after:size-[5px] after:rounded-full after:bg-orange-500 [&_svg]:size-[13px] [&_svg]:text-blue-600 max-[1100px]:justify-center max-[1100px]:px-0"
+                        style="background: linear-gradient(90deg, rgba(37,99,235,0.12) 0%, rgba(249,115,22,0.07) 100%);">
                         <img src="{{ asset('img/Icon.png') }}" alt="Dashboard Icon" class="size-4">
                         <span
-                            class="h-[19.5px] w-[69.47px] text-[13px] font-semibold leading-[19.5px] max-[1100px]:hidden">Dashboard</span>
+                            class="h-[20px] w-[70px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#2563EB] max-[1100px]:hidden">Dashboard</span>
                     </a>
                 </div>
 
@@ -114,23 +115,28 @@
 
             <!-- User Box Section -->
             <div
-                class="flex min-h-12 items-center gap-[9px] rounded-lg border border-[#e8eef8] bg-[#f8fbff] p-[7px] max-[1100px]:justify-center max-[720px]:hidden">
-                <div
-                    class="grid size-[31px] place-items-center rounded-full bg-gradient-to-br from-[#26364f] to-orange-500 text-xs font-extrabold text-white">
-                    RS</div>
-                <div class="max-[1100px]:hidden">
-                    <strong class="block text-xs leading-none">Rahul Sharma</strong>
-                    <span class="text-[8px] font-bold uppercase text-[#7890ad]">Super Admin</span>
+                class="-mx-[8px] flex h-[70px] w-[239px] items-center border-t border-[#2563EB]/10 pt-[8px] pr-[8px] pb-[12px] pl-[8px] max-[720px]:hidden">
+                <div class="flex h-[49px] w-[223px] items-center gap-[10px] rounded-[20px] bg-[#2563EB]/[0.05] p-[8px] max-[1100px]:justify-center">
+                    <img src="{{ asset('img/user.png') }}" alt="Rahul Sharma" class="size-[33px] rounded-full object-cover">
+                    <div class="w-[142px] max-[1100px]:hidden">
+                        <strong class="block h-[18px] w-[79px] font-Jakarta text-[12px] font-bold leading-[18px] tracking-normal text-[#0F172A]">Rahul Sharma</strong>
+                        <span class="block h-[15px] w-[61px] font-Jakarta text-[10px] font-normal leading-[15px] tracking-normal text-[#94A3B8]">Super Admin</span>
+                    </div>
+                    <svg viewBox="0 0 24 24" class="ml-auto size-[13px] text-[#62748E]" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4" />
+                        <path d="M16 17l5-5-5-5" />
+                        <path d="M21 12H9" />
+                    </svg>
                 </div>
             </div>
         </aside>
 
         <!-- Main Content Section -->
-        <main class="min-w-0 overflow-auto bg-[#f3f7ff] px-4 pb-6 pt-0 max-[720px]:p-3">
+        <main class="min-w-0 overflow-auto bg-[#F0F4FF] px-4 pb-6 pt-0 max-[720px]:p-3">
 
             <!-- Topbar Section -->
             <header
-                class="mb-4 flex h-[56px] items-center justify-between gap-4 rounded-lg border border-[#e8eef8] bg-white/90 px-6 py-0 max-[720px]:h-auto max-[720px]:flex-col max-[720px]:items-stretch max-[720px]:py-3">
+                class="-mx-4 mb-4 flex h-[64px] w-[calc(100%+2rem)] items-center justify-between border-b border-[#2563EB]/10 bg-white/95 pr-[24px] pl-[24px] max-[720px]:h-auto max-[720px]:flex-col max-[720px]:items-stretch max-[720px]:py-3">
                 <!-- Topbar Title Section -->
                 <div>
                     <div class="h-6 w-[181.73px]">
@@ -145,22 +151,22 @@
                 </div>
 
                 <!-- Topbar Right Actions Section -->
-                <div class="flex items-center gap-2.5">
+                <div class="flex h-[37.5px] w-[370px] items-center gap-[12px]">
                     <!-- Search Box Section -->
-                    <button type="button"
-                        class="flex h-[37.5px] w-[274px] cursor-pointer items-center gap-2 rounded-full border border-[#e8eef8] bg-[#fbfdff] px-3 text-left text-[9px] font-semibold text-[#9aacc2] max-[720px]:w-full">
+                    <div
+                        class="flex h-[37.5px] w-[274px] items-center gap-[8px] rounded-[20px] border border-[#E2E8F0] bg-[#FFFFFF] pt-[8px] pr-[12px] pb-[8px] pl-[12px] text-left text-[9px] font-semibold text-[#9aacc2] max-[720px]:w-full">
                         <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="11" cy="11" r="7" />
                             <path d="m21 21-4.3-4.3" />
                         </svg>
-                        <span class="h-4 w-48 flex-1 text-[13px] font-normal leading-none text-[#0F172A]/50">Search
-                            anything...</span>
+                        <input type="search" placeholder="Search anything..."
+                            class="h-[19.5px] w-[192px] bg-transparent text-[13px] font-normal leading-[19.5px] text-[#0F172A]/50 outline-none placeholder:text-[#0F172A]/50">
                         <img src="{{ asset('img/Text.png') }}" alt="Shortcut" class="h-[19px] w-[27px] object-contain">
-                    </button>
+                    </div>
 
                     <!-- Notification Button Section -->
                     <button
-                        class="grid size-[30px] place-items-center rounded-full border border-[#e8eef8] bg-white text-[#5f7ba0]"
+                        class="grid size-[36px] place-items-center rounded-[20px] bg-[#2563EB]/[0.07] text-[#5f7ba0]"
                         aria-label="Notifications">
                         <span class="relative grid size-[30px] place-items-center">
                             <svg viewBox="0 0 24 24" class="size-[15px]" fill="none" stroke="#2563EB" stroke-width="1.8"
@@ -189,107 +195,107 @@
 
                     <!-- KPI Card 1 -->
                     <article
-                        class="grid h-full grid-rows-[16px_42px_18px] gap-1.5 overflow-hidden rounded-2xl border border-white/90 bg-white/90 p-4 shadow-[0_10px_24px_rgba(52,83,130,.04)] max-[1100px]:h-[114px]">
+                        class="relative h-full overflow-hidden rounded-2xl border-t border-white/[0.92] bg-white/[0.88] p-4 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:h-[114px]">
                         <h2
-                            class="h-[17px] w-[38px] whitespace-nowrap font-jakarta text-[11px] font-semibold leading-[16.5px] text-[#94A3B8]">
+                            class="h-[17px] w-[38px] whitespace-nowrap font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#94A3B8]">
                             Total Leads
                         </h2>
-                        <div class="flex items-center justify-between gap-3.5">
+                        <div class="mt-0 flex h-[47px] w-[173px] items-center justify-between">
                             <h3
-                                class="w-[73px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
+                                class="h-[30px] w-[72.65px] pt-[4px] font-Jakarta text-[26px] font-black leading-[26px] text-[#0F172A]">
                                 1,840
                             </h3>
                             <img src="{{ asset('img/Sparkline.png') }}" alt="Leads Sparkline"
-                                class="h-[36px] w-[83px] object-contain">
+                                class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
-                        <div class="flex items-center gap-[7px]">
+                        <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
                             <span
-                                class="rounded-full bg-emerald-50 px-[7px] py-1 text-[8px] font-extrabold text-emerald-600">+18.4%</span>
-                            <small class="text-[8px] font-semibold text-[#7890ad]">vs last month</small>
+                                class="flex h-[21px] w-[71px] items-center justify-center gap-[2px] rounded-full bg-[#22C55E]/[0.12] pt-[2px] pr-[8px] pb-[2px] pl-[8px] font-Jakarta text-[11px] font-bold leading-[16.5px] tracking-normal text-[#22C55E]">+18.4%</span>
+                            <small class="block h-[17px] w-[68px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">vs last month</small>
                         </div>
                     </article>
 
                     <!-- KPI Card 2 -->
                     <article
-                        class="grid h-full grid-rows-[16px_42px_18px] gap-1.5 overflow-hidden rounded-2xl border border-white/90 bg-white/90 p-4 shadow-[0_10px_24px_rgba(52,83,130,.04)] max-[1100px]:h-[114px]">
+                        class="relative h-full overflow-hidden rounded-2xl border-t border-white/[0.92] bg-white/[0.88] p-4 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:h-[114px]">
                         <h2
-                            class="w-[38px] h-[17px] font-jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
+                            class="w-[38px] h-[17px] font-Jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
                             Appointments
                         </h2>
-                        <div class="flex items-center justify-between gap-3.5">
+                        <div class="mt-0 flex h-[47px] w-[173px] items-center justify-between">
                             <h3
                                 class="w-[52px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
                                 480</h3>
                             <img src="{{ asset('img/orngSpark.png') }}" alt="Leads Sparkline"
-                                class="h-[38px] w-[83px] object-contain">
+                                class="h-[38px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
-                        <div class="flex items-center gap-[7px]">
+                        <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
                             <span
-                                class="rounded-full bg-emerald-50 px-[7px] py-1 text-[8px] font-extrabold text-emerald-600">+12.2%</span>
-                            <small class="text-[8px] font-semibold text-[#7890ad]">vs last month</small>
+                                class="flex h-[21px] w-[71px] items-center justify-center gap-[2px] rounded-full bg-[#22C55E]/[0.12] pt-[2px] pr-[8px] pb-[2px] pl-[8px] font-Jakarta text-[11px] font-bold leading-[16.5px] tracking-normal text-[#22C55E]">+12.2%</span>
+                            <small class="block h-[17px] w-[68px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">vs last month</small>
                         </div>
                     </article>
 
                     <!-- KPI Card 3 -->
                     <article
-                        class="grid h-full grid-rows-[16px_42px_18px] gap-1.5 overflow-hidden rounded-2xl border border-white/90 bg-white/90 p-4 shadow-[0_10px_24px_rgba(52,83,130,.04)] max-[1100px]:h-[114px]">
+                        class="relative h-full overflow-hidden rounded-2xl border-t border-white/[0.92] bg-white/[0.88] p-4 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:h-[114px]">
                         <h2
-                            class="w-[38px] h-[17px] font-jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
+                            class="w-[38px] h-[17px] font-Jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
                             Orders
                         </h2>
-                        <div class="flex items-center justify-between gap-3.5">
+                        <div class="mt-0 flex h-[47px] w-[173px] items-center justify-between">
                             <h3
                                 class="w-[45px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
                                 310</h3>
                             <img src="{{ asset('img/greenSpark.png') }}" alt="Leads Sparkline"
-                                class="h-[36px] w-[83px] object-contain">
+                                class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
-                        <div class="flex items-center gap-[7px]">
+                        <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
                             <span
-                                class="rounded-full bg-emerald-50 px-[7px] py-1 text-[8px] font-extrabold text-emerald-600">+24.8%</span>
-                            <small class="text-[8px] font-semibold text-[#7890ad]">vs last month</small>
+                                class="flex h-[21px] w-[71px] items-center justify-center gap-[2px] rounded-full bg-[#22C55E]/[0.12] pt-[2px] pr-[8px] pb-[2px] pl-[8px] font-Jakarta text-[11px] font-bold leading-[16.5px] tracking-normal text-[#22C55E]">+24.8%</span>
+                            <small class="block h-[17px] w-[68px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">vs last month</small>
                         </div>
                     </article>
 
                     <!-- KPI Card 4 -->
                     <article
-                        class="grid h-full grid-rows-[16px_42px_18px] gap-1.5 overflow-hidden rounded-2xl border border-white/90 bg-white/90 p-4 shadow-[0_10px_24px_rgba(52,83,130,.04)] max-[1100px]:h-[114px]">
+                        class="relative h-full overflow-hidden rounded-2xl border-t border-white/[0.92] bg-white/[0.88] p-4 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:h-[114px]">
                         <h2
-                            class="w-[46px] h-[17px] font-jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
+                            class="w-[46px] h-[17px] font-Jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
                             Revenue
                         </h2>
-                        <div class="flex items-center justify-between gap-3.5">
+                        <div class="mt-0 flex h-[47px] w-[173px] items-center justify-between">
                             <h3
                                 class="w-[86px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
-                                Rs13.6L</h3>
+                                ₹13.6L</h3>
                             <img src="{{ asset('img/purpleSpark.png') }}" alt="Leads Sparkline"
-                                class="h-[36px] w-[83px] object-contain">
+                                class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
-                        <div class="flex items-center gap-[7px]">
+                        <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
                             <span
-                                class="rounded-full bg-emerald-50 px-[7px] py-1 text-[8px] font-extrabold text-emerald-600">+31.8%</span>
-                            <small class="text-[8px] font-semibold text-[#7890ad]">vs last month</small>
+                                class="flex h-[21px] w-[71px] items-center justify-center gap-[2px] rounded-full bg-[#22C55E]/[0.12] pt-[2px] pr-[8px] pb-[2px] pl-[8px] font-Jakarta text-[11px] font-bold leading-[16.5px] tracking-normal text-[#22C55E]">+31.8%</span>
+                            <small class="block h-[17px] w-[68px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">vs last month</small>
                         </div>
                     </article>
 
                     <!-- KPI Card 5 -->
                     <article
-                        class="grid h-full grid-rows-[16px_42px_18px] gap-1.5 overflow-hidden rounded-2xl border border-white/90 bg-white/90 p-4 shadow-[0_10px_24px_rgba(52,83,130,.04)] max-[1100px]:h-[114px]">
+                        class="relative h-full overflow-hidden rounded-2xl border-t border-white/[0.92] bg-white/[0.88] p-4 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:h-[114px]">
                         <h2
-                            class="w-[61px] h-[17px] font-jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
+                            class="w-[61px] h-[17px] font-Jakarta font-semibold text-[11px] leading-[16.5px] text-[#94A3B8]">
                             Conversion
                         </h2>
-                        <div class="flex items-center justify-between gap-3.5">
+                        <div class="mt-0 flex h-[47px] w-[173px] items-center justify-between">
                             <h3
                                 class="w-[82px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
                                 16.8%</h3>
                             <img src="{{ asset('img/darkSpark.png') }}" alt="Leads Sparkline"
-                                class="h-[36px] w-[83px] object-contain">
+                                class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
-                        <div class="flex items-center gap-[7px]">
+                        <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
                             <span
-                                class="rounded-full bg-emerald-50 px-[7px] py-1 text-[8px] font-extrabold text-emerald-600">+2.1pp</span>
-                            <small class="text-[8px] font-semibold text-[#7890ad]">vs last month</small>
+                                class="flex h-[21px] w-[71px] items-center justify-center gap-[2px] rounded-full bg-[#22C55E]/[0.12] pt-[2px] pr-[8px] pb-[2px] pl-[8px] font-Jakarta text-[11px] font-bold leading-[16.5px] tracking-normal text-[#22C55E]">+2.1pp</span>
+                            <small class="block h-[17px] w-[68px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">vs last month</small>
                         </div>
                     </article>
                 </div>
@@ -304,81 +310,61 @@
                                 class="w-[150px] h-[21px] font-jakarta font-bold text-[14px] leading-[21px] tracking-[0px] text-[#0F172B]">
                                 Revenue & Lead Trend
                             </h2>
-                            <p class="m-0 mt-2 text-[12px] font-medium leading-none text-[#6f85a0]">6-month performance
-                                overview</p>
+                            <p class="m-0 mt-2 h-[17px] w-[167px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">6-month performance overview</p>
                         </div>
                         <button
-                            class="flex h-[33px] w-[126px] items-center justify-center gap-2 rounded-full border border-[#cfe0ff] bg-white text-[#101828] shadow-sm">
-                            <span class="h-[18px] w-[80px] text-[12px] font-semibold leading-[18px]">Last 6
-                                Months</span>
-                            <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor" stroke-width="2">
+                            class="flex h-[33px] w-[126px] items-center justify-center gap-[6px] rounded-[20px] border-[1.5px] border-[#2563EB]/20 bg-[#FFFFFF] pt-[6px] pr-[12px] pb-[6px] pl-[12px] text-[#101828]">
+                            <span class="h-[18px] w-[80px] text-center font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#0F172A]">Last 6 Months</span>
+                            <svg viewBox="0 0 24 24" class="size-[13px]" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </button>
                     </div>
 
                     <!-- Revenue Trend Legend -->
-                    <div class="flex gap-6 text-[12px] font-medium text-[#526986]">
+                    <div class="flex h-[17px] w-full gap-[20px] text-[12px] font-medium text-[#526986]">
                         <span
-                            class="before:mr-2 before:inline-block before:h-[2px] before:w-8 before:align-middle before:bg-blue-600">Leads</span>
+                            class="inline-flex h-[17px] items-center gap-[6px] before:inline-block before:h-[2px] before:w-[28px] before:bg-blue-600"><span class="block h-[17px] w-[32px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Leads</span></span>
                         <span
-                            class="before:mr-2 before:inline-block before:h-[2px] before:w-8 before:align-middle before:bg-orange-500">Orders</span>
+                            class="inline-flex h-[17px] items-center gap-[6px] before:inline-block before:h-[2px] before:w-[28px] before:bg-[#F97316]"><span class="block h-[17px] w-[38px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Orders</span></span>
                         <span
-                            class="before:mr-2 before:inline-block before:h-[2px] before:w-8 before:align-middle before:bg-purple-500">Revenue
-                            (Rs k)</span>
+                            class="inline-flex h-[17px] w-[104px] items-center gap-[6px] before:inline-block before:h-[2px] before:w-[28px] before:bg-purple-500"><span class="block h-[17px] w-[70px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Revenue</span></span>
                     </div>
 
                     <!-- Revenue Trend Chart -->
-                    <svg class="mt-1 h-[182px] w-full" viewBox="0 0 685 182" fill="none" preserveAspectRatio="none">
-                        <g stroke="#e8eef8" stroke-dasharray="5 5">
-                            <path d="M145 30H675M145 66H675M145 102H675M145 138H675" />
-                        </g>
-                        <g fill="#9aaabd" font-size="10" font-weight="500">
-                            <text x="120" y="33">832</text><text x="120" y="69">624</text><text x="120"
-                                y="105">416</text><text x="120" y="141">208</text>
-                            <text x="142" y="176">Jan</text><text x="246" y="176">Feb</text><text x="350"
-                                y="176">Mar</text><text x="454" y="176">Apr</text><text x="558" y="176">May</text><text
-                                x="650" y="176">Jun</text>
-                        </g>
-                        <image href="{{ asset('img/Vector.png') }}" x="136.66" y="24" width="444" height="58.15"
-                            preserveAspectRatio="none" />
-                        <circle cx="580.66" cy="26" r="5" fill="#a855f7" />
-                        <image href="{{ asset('img/Vector1.png') }}" x="136.66" y="116" width="440" height="23"
-                            preserveAspectRatio="none" />
-                        <image href="{{ asset('img/Vector2.png') }}" x="136.66" y="132" width="440" height="16"
-                            preserveAspectRatio="none" />
-                    </svg>
+                    <canvas id="revenueLeadChart" class="mt-1 h-[182px] w-full"></canvas>
                 </section>
 
                 <!-- Lead Funnel Section -->
                 <section
-                    class="col-span-4 h-[297.5px] overflow-hidden rounded-2xl border border-white/90 bg-white/90 p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12 max-[720px]:h-auto">
+                    class="col-span-4 h-[297.5px] w-[347.66px] overflow-hidden rounded-2xl border-t border-white/[0.92] bg-white/[0.88] p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12 max-[720px]:h-auto">
                     <!-- Lead Funnel Title -->
                     <h2
                         class="w-[82px] h-[21px] font-jakarta font-bold text-[14px] leading-[21px] tracking-[0px] text-[#0F172B]">
                         Lead Funnel
                     </h2>
                     <p
-                        class="m-0 mt-2 h-[17px] w-[91px] text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">
+                        class="m-0 mt-2 h-[17px] w-[91px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">
                         Jun 2025 pipeline</p>
 
                     <!-- Lead Funnel Bars -->
-                    <div class="mt-5 space-y-1.5">
-                        <div class="grid grid-cols-[112px_minmax(0,1fr)_32px] items-center gap-2.5">
-                            <span
-                                class="h-[17px] w-[59px] justify-self-end text-right text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Total
-                                Leads</span>
-                            <div class="h-[25px] overflow-hidden rounded-full bg-[#eef3fa]"><span
-                                    class="flex h-full w-full items-center px-4 rounded-full bg-blue-600 text-[14px] font-extrabold text-white">1,840</span>
+                    <div class="-ml-[22px] h-[214px] w-[313.66px] pt-[16px] space-y-1.5">
+                        <div class="flex h-[28px] w-[313.66px] items-center gap-[12px]">
+                            <div class="flex w-[112px] justify-end">
+                                <span
+                                    class="h-[17px] w-[59px] text-right text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Total
+                                    Leads</span>
                             </div>
-                            <span></span>
+                            <div class="h-[28px] flex-1 overflow-hidden rounded-full bg-[#F1F5F9]"><span
+                                    class="flex h-full w-full items-center rounded-full bg-[#2563EB] px-4 font-Jakarta text-[11px] font-bold leading-[16.5px] text-white">1,840</span>
+                            </div>
                         </div>
 
                         <div class="grid grid-cols-[112px_minmax(0,1fr)_32px] items-center gap-2.5">
                             <span
                                 class="h-[17px] w-[59px] justify-self-end text-right text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Assigned</span>
-                            <div class="h-[25px] overflow-hidden rounded-full bg-[#eef3fa]"><span
-                                    class="flex h-full w-[77%] min-w-[58px] items-center px-4 rounded-full bg-indigo-500 text-[14px] font-extrabold text-white">1,420</span>
+                            <div class="h-[25px] overflow-hidden rounded-full bg-[#F1F5F9]"><span
+                                    class="flex h-full w-[77%] min-w-[58px] items-center rounded-full bg-[#6366F1] px-4 font-Jakarta text-[11px] font-bold leading-[16.5px] text-white">1,420</span>
                             </div>
                             <p
                                 class="w-[21px] h-[15px] font-jakarta font-normal text-[10px] leading-[15px] text-[#90A1B9]">
@@ -389,8 +375,8 @@
                         <div class="grid grid-cols-[112px_minmax(0,1fr)_32px] items-center gap-2.5">
                             <span
                                 class="h-[17px] w-[59px] justify-self-end text-right text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Contacted</span>
-                            <div class="h-[25px] overflow-hidden rounded-full bg-[#eef3fa]"><span
-                                    class="flex h-full w-[58%] min-w-[58px] items-center px-4 rounded-full bg-purple-500 text-[14px] font-extrabold text-white">1,050</span>
+                            <div class="h-[25px] overflow-hidden rounded-full bg-[#F1F5F9]"><span
+                                    class="flex h-full w-[58%] min-w-[58px] items-center rounded-full bg-[#A855F7] px-4 font-Jakarta text-[11px] font-bold leading-[16.5px] text-white">1,050</span>
                             </div>
                             <p
                                 class="w-[21px] h-[15px] font-jakarta font-normal text-[10px] leading-[15px] text-[#90A1B9]">
@@ -401,8 +387,8 @@
                         <div class="grid grid-cols-[112px_minmax(0,1fr)_32px] items-center gap-2.5">
                             <span
                                 class="h-[17px] w-[59px] justify-self-end text-right text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Confirmed</span>
-                            <div class="h-[25px] overflow-hidden rounded-full bg-[#eef3fa]"><span
-                                    class="flex h-full w-[33%] min-w-[58px] items-center px-4 rounded-full bg-orange-500 text-[14px] font-extrabold text-white">620</span>
+                            <div class="h-[25px] overflow-hidden rounded-full bg-[#F1F5F9]"><span
+                                    class="flex h-full w-[33%] min-w-[58px] items-center rounded-full bg-[#F97316] px-4 font-Jakarta text-[11px] font-bold leading-[16.5px] text-white">620</span>
                             </div>
                             <p
                                 class="w-[21px] h-[15px] font-jakarta font-normal text-[10px] leading-[15px] text-[#90A1B9]">
@@ -413,8 +399,8 @@
                         <div class="grid grid-cols-[112px_minmax(0,1fr)_32px] items-center gap-2.5">
                             <span
                                 class="h-[17px] w-[59px] justify-self-end text-right text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Appointment</span>
-                            <div class="h-[25px] overflow-hidden rounded-full bg-[#eef3fa]"><span
-                                    class="flex h-full w-[26%] min-w-[58px] items-center px-4 rounded-full bg-teal-500 text-[14px] font-extrabold text-white">480</span>
+                            <div class="h-[25px] overflow-hidden rounded-full bg-[#F1F5F9]"><span
+                                    class="flex h-full w-[26%] min-w-[58px] items-center rounded-full bg-[#14B8A6] px-4 font-Jakarta text-[11px] font-bold leading-[16.5px] text-white">480</span>
                             </div>
                             <p
                                 class="w-[21px] h-[15px] font-jakarta font-normal text-[10px] leading-[15px] text-[#90A1B9]">
@@ -425,8 +411,8 @@
                         <div class="grid grid-cols-[112px_minmax(0,1fr)_32px] items-center gap-2.5">
                             <span
                                 class="h-[17px] w-[59px] justify-self-end text-right text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Orders</span>
-                            <div class="h-[25px] overflow-hidden rounded-full bg-[#eef3fa]"><span
-                                    class="flex h-full w-[22%] min-w-[58px] items-center px-4 rounded-full bg-emerald-500 text-[14px] font-extrabold text-white">310</span>
+                            <div class="h-[25px] overflow-hidden rounded-full bg-[#F1F5F9]"><span
+                                    class="flex h-full w-[22%] min-w-[58px] items-center rounded-full bg-[#22C55E] px-4 font-Jakarta text-[11px] font-bold leading-[16.5px] text-white">310</span>
                             </div>
                             <p
                                 class="w-[21px] h-[15px] font-jakarta font-normal text-[10px] leading-[15px] text-[#90A1B9]">
@@ -436,9 +422,11 @@
                     </div>
                 </section>
 
-                <!-- SLA Performance Section -->
-                <section
-                    class="col-span-4 h-[340px] rounded-2xl border border-white/90 bg-white/90 p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12">
+                <!-- Performance Cards Row Section -->
+                <div class="col-span-12 grid h-[360px] w-full grid-cols-12 gap-4 pt-[20px]">
+                    <!-- SLA Performance Section -->
+                    <section
+                        class="col-span-4 h-[340px] rounded-2xl border border-white/90 bg-white/90 p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12">
                     <!-- SLA Performance Title -->
                     <h2 class="w-[119px] h-[21px] font-jakarta font-bold text-[14px] leading-[21px] text-[#0F172B]">
                         SLA Performance
@@ -524,11 +512,11 @@
                                     class="block h-full w-[98%] rounded-full bg-emerald-500"></span></div>
                         </div>
                     </div>
-                </section>
+                    </section>
 
-                <!-- Territory Performance Section -->
-                <section
-                    class="col-span-4 h-[340px] w-[355.66px] rounded-[16px] border border-[rgba(255,255,255,0.92)] bg-[rgba(255,255,255,0.88)] p-[20px] shadow-[0px_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12">
+                    <!-- Territory Performance Section -->
+                    <section
+                        class="col-span-4 -ml-[6px] h-[340px] w-[355.66px] rounded-[16px] border border-[rgba(255,255,255,0.92)] bg-[rgba(255,255,255,0.88)] p-[20px] shadow-[0px_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12">
                     <!-- Territory Performance Title -->
                     <h2 class="m-0 h-[21px] w-[151px] text-[14px] font-bold leading-[21px] text-[#0F172B]">Territory Performance</h2>
                     <p class="m-0 mt-2 h-[17px] w-[132px] text-[11px] font-normal leading-[16.5px] text-[#62748E]">Orders by zone this month</p>
@@ -602,11 +590,11 @@
                             <span class="text-right text-[11px] font-normal leading-[16.5px] text-[#62748E]">36</span>
                         </div>
                     </div>
-                </section>
+                    </section>
 
-                <!-- Live Activity Section -->
-                <section
-                    class="col-span-4 h-[340px] rounded-2xl border border-white/90 bg-white/90 p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12">
+                    <!-- Live Activity Section -->
+                    <section
+                        class="col-span-4 h-[340px] rounded-2xl border border-white/90 bg-white/90 p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12">
                     <!-- Live Activity Header -->
                     <div class="mb-[17px] flex items-start justify-between gap-3">
                         <h2 class="m-0 h-[21px] text-[14px] font-bold leading-[21px] text-[#0F172B]">Live Activity</h2>
@@ -619,8 +607,8 @@
 
                     <!-- Live Activity List -->
                     <div class="grid gap-[13px]">
-                        <div class="grid grid-cols-[24px_minmax(0,1fr)] items-center gap-2.5">
-                            <span class="grid size-6 place-items-center rounded-full bg-emerald-50 text-[#22C55E]">
+                        <div class="grid grid-cols-[28px_minmax(0,1fr)] items-center gap-2.5">
+                            <span class="grid h-[28px] w-[28px] place-items-center rounded-[20px] bg-[#22C55E]/[0.12] text-[#22C55E]">
                                 <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M20 6 9 17l-5-5" />
@@ -631,8 +619,8 @@
                                 <small class="block h-[15px] w-[46px] font-jakarta text-[10px] font-normal leading-[15px] text-[#62748E]">2 min ago</small>
                             </div>
                         </div>
-                        <div class="grid grid-cols-[24px_minmax(0,1fr)] items-center gap-2.5">
-                            <span class="grid size-6 place-items-center rounded-full bg-indigo-50 text-indigo-500">
+                        <div class="grid grid-cols-[28px_minmax(0,1fr)] items-center gap-2.5">
+                            <span class="grid h-[28px] w-[28px] place-items-center rounded-[20px] bg-[#2563EB]/[0.12] text-[#2563EB]">
                                 <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M16 21v-2a4 4 0 0 0-8 0v2" />
@@ -644,8 +632,8 @@
                                 <small class="block h-[15px] w-[46px] font-jakarta text-[10px] font-normal leading-[15px] text-[#62748E]">8 min ago</small>
                             </div>
                         </div>
-                        <div class="grid grid-cols-[24px_minmax(0,1fr)] items-center gap-2.5">
-                            <span class="grid size-6 place-items-center rounded-full bg-purple-50 text-purple-500">
+                        <div class="grid grid-cols-[28px_minmax(0,1fr)] items-center gap-2.5">
+                            <span class="grid h-[28px] w-[28px] place-items-center rounded-[20px] bg-[#A855F7]/[0.12] text-[#A855F7]">
                                 <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M12 2v20" />
@@ -657,8 +645,8 @@
                                 <small class="block h-[15px] w-[50px] font-jakarta text-[10px] font-normal leading-[15px] text-[#62748E]">12 min ago</small>
                             </div>
                         </div>
-                        <div class="grid grid-cols-[24px_minmax(0,1fr)] items-center gap-2.5">
-                            <span class="grid size-6 place-items-center rounded-full bg-amber-50 text-amber-500">
+                        <div class="grid grid-cols-[28px_minmax(0,1fr)] items-center gap-2.5">
+                            <span class="grid h-[28px] w-[28px] place-items-center rounded-[20px] bg-[#F59E0B]/[0.12] text-[#F59E0B]">
                                 <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <circle cx="12" cy="12" r="9" />
@@ -699,7 +687,8 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                    </section>
+                </div>
 
                 <!-- Quick Actions Section -->
                 <section
@@ -710,33 +699,33 @@
 
                     <!-- Quick Actions Buttons -->
                     <div class="mt-[18px] flex h-[113.5px] w-[669.33px] gap-[9px] max-[720px]:w-full max-[720px]:flex-wrap">
-                        <a href="#" id="openNewLeadModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-center gap-2 rounded-[20px] border border-[#2563EB]/15 bg-[#2563EB]/[0.08] px-4 py-3 text-center text-blue-600">
-                            <span class="grid size-[28px] place-items-center rounded-full bg-blue-100 [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'plus'])</span>
+                        <a href="#" id="openNewLeadModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#2563EB]/15 bg-[#2563EB]/[0.08] px-4 py-3 text-center text-blue-600">
+                            <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#2563EB]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'plus'])</span>
                             <span class="block h-[14px] w-[53px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#2563EB]">New Lead</span>
                         </a>
 
-                        <a href="#" id="openBookAppointmentModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-center gap-2 rounded-[20px] border border-orange-500/15 bg-orange-500/[0.08] px-4 py-3 text-center text-orange-500">
-                            <span class="grid size-[28px] place-items-center rounded-full bg-orange-100 [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'calendar'])</span>
+                        <a href="#" id="openBookAppointmentModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-orange-500/15 bg-orange-500/[0.08] px-4 py-3 text-center text-orange-500">
+                            <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#F97316]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'calendar'])</span>
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#F97316]">Book Appointment</span>
                         </a>
 
-                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-center gap-2 rounded-[20px] border border-[#22C55E]/15 bg-[#22C55E]/[0.08] px-4 py-3 text-center text-emerald-500">
-                            <span class="grid size-[28px] place-items-center rounded-full bg-emerald-100 [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'box'])</span>
+                        <a href="#" id="openCreateOrderModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#22C55E]/15 bg-[#22C55E]/[0.08] px-4 py-3 text-center text-emerald-500">
+                            <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#22C55E]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'box'])</span>
                             <span class="block h-[14px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#22C55E]">Create Order</span>
                         </a>
 
-                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-center gap-2 rounded-[20px] border border-[#A855F714]/15 bg-[#A855F714]/[0.08]  px-4 py-3 text-center text-purple-500">
-                            <span class="grid size-[28px] place-items-center rounded-full bg-purple-100 [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'users'])</span>
+                        <a href="#" id="openAssignExecutiveModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#A855F714]/15 bg-[#A855F714]/[0.08]  px-4 py-3 text-center text-purple-500">
+                            <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#A855F7]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'users'])</span>
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#A855F7]">Assign Executive</span>
                         </a>
 
-                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-center gap-2 rounded-[20px] border border-[#14B8A614]/15 bg-[#14B8A614]/[0.08] px-4 py-3 text-center text-teal-500">
-                            <span class="grid size-[28px] place-items-center rounded-full bg-teal-100 [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'phone'])</span>
+                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#14B8A614]/15 bg-[#14B8A614]/[0.08] px-4 py-3 text-center text-teal-500">
+                            <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#14B8A6]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'phone'])</span>
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#14B8A6]">Export<br>Report</span>
                         </a>
 
-                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-center gap-2 rounded-[20px] border border-[#F59E0B14]/15 bg-[#F59E0B14]/[0.08] px-4 py-3 text-center text-amber-500">
-                            <span class="grid size-[28px] place-items-center rounded-full bg-amber-100 [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'refresh'])</span>
+                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#F59E0B14]/15 bg-[#F59E0B14]/[0.08] px-4 py-3 text-center text-amber-500">
+                            <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#F59E0B]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'refresh'])</span>
                             <span class="block h-[14px] w-[54px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#F59E0B]">Sync CRM</span>
                         </a>
                     </div>
@@ -798,9 +787,9 @@
             <div id="leadStepOne" class="mx-auto w-[672px] py-4">
                 <!-- Modal Step One Tabs -->
                 <div class="mb-4 flex items-center gap-3">
-                    <div class="flex items-center gap-2">
+                    <div class="flex h-[24px] w-[114px] items-center gap-[6px]">
                         <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-gradient-to-br from-[#2563EB] to-[#F97316] text-[11px] font-bold text-white">1</span>
-                        <span class="font-Jakarta text-[11px] font-semibold text-[#2563EB]">Patient Details</span>
+                        <span class="block h-[18px] w-[84px] whitespace-nowrap font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#2563EB]">Patient Details</span>
                     </div>
                     <div class="h-px flex-1 bg-[#E8EEF8]"></div>
                     <div class="flex items-center gap-2">
@@ -814,26 +803,26 @@
                     <!-- Patient Name Field -->
                     <div class="h-[58.5px]">
                         <label class="mb-1 block h-[17px] w-[79px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Patient Name *</label>
-                        <input id="leadName" type="text" placeholder="e.g. Ramesh Kumar" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 text-[11px] outline-none">
+                        <input id="leadName" type="text" placeholder="e.g. Ramesh Kumar" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-[13px] font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
                     </div>
 
                     <!-- Mobile Number Field -->
                     <div class="mt-[12px] h-[70.5px]">
                         <label class="mb-[4px] block h-[17px] w-[89px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Mobile Number *</label>
-                        <input id="leadPhone" type="text" placeholder="+91 98765 43210" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 text-[11px] outline-none">
+                        <input id="leadPhone" type="text" placeholder="+91 98765 43210" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-[13px] font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
                     </div>
 
                     <!-- Area Locality Field -->
                     <div class="h-[70.5px]">
                         <label class="mb-1 block h-[17px] w-[84px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Area / Locality *</label>
-                        <input id="leadArea" type="text" placeholder="e.g. Banjara Hills, Hyderabad" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 text-[11px] outline-none">
+                        <input id="leadArea" type="text" placeholder="e.g. Banjara Hills, Hyderabad" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-[13px] font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
                     </div>
 
                     <!-- Age Gender Fields -->
                     <div class="grid h-[70px] grid-cols-2 gap-3">
                         <div>
                             <label class="mb-1 block h-[17px] w-[22px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Age</label>
-                            <input type="text" placeholder="e.g. 58" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 text-[11px] outline-none">
+                            <input type="text" placeholder="e.g. 58" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-[13px] font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
                         </div>
                         <div>
                             <label class="mb-1 block h-[17px] w-[41px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Gender</label>
@@ -842,9 +831,11 @@
                     </div>
 
                     <!-- Next Step Button -->
-                    <button type="button" id="nextLeadStep" class="mt-5 flex h-[32px] w-[660px] items-center justify-center rounded-[20px] px-4 py-2" style="background: linear-gradient(90deg, #2563EB 0%, #F97316 100%);">
-                        <span class="block h-[20px] w-[75px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#FFFFFF]">Next Step &rarr;</span>
-                    </button>
+                    <button type="button" id="nextLeadStep" class="h-[35.5px] rounded-[20px] px-4 py-2 flex items-center justify-center gap-1.5 text-white font-medium text-sm"
+  style="width: 672px; background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);"
+>
+  Next Step →
+  </button>
                 </form>
             </div>
 
@@ -854,9 +845,9 @@
                 <div class="mb-4 flex items-center gap-3">
                     <div class="flex items-center gap-2">
                         <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-gradient-to-br from-[#2563EB] to-[#F97316] text-[11px] font-bold text-white">1</span>
-                        <span class="font-Jakarta text-[11px] font-semibold text-[#2563EB]">Patient Details</span>
+                        <span class="block h-[18px] w-[84px] whitespace-nowrap font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#2563EB]">Patient Details</span>
                     </div>
-                    <div class="h-px flex-1 bg-[#22C55E]"></div>
+                    <div class="h-[2px] w-[414px] rounded-full bg-[#22C55E]"></div>
                     <div class="flex items-center gap-2">
                         <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-gradient-to-br from-[#2563EB] to-[#F97316] text-[11px] font-bold text-white">2</span>
                         <span class="font-Jakarta text-[11px] font-semibold text-[#2563EB]">Problem & Notes</span>
@@ -872,26 +863,28 @@
                     </div>
 
                     <!-- Notes Field -->
-                    <div class="h-[86px]">
+                    <div class="h-[92px] w-[672px] pt-[12px]">
                         <label class="mb-1 block font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#62748E]">Notes / Additional Info</label>
-                        <textarea placeholder="Any prior surgeries, current medication, or additional details..." class="h-[58px] w-full resize-none rounded-[16px] border border-[#E8EEF8] px-4 py-3 text-[11px] outline-none"></textarea>
+                        <textarea placeholder="Any prior surgeries, current medication, or additional details..." class="h-[58px] w-full resize-none rounded-[16px] border border-[#E8EEF8] px-[13px] py-3 font-Jakarta text-[13px] font-normal leading-[19.5px] text-[#90A1B9] outline-none placeholder:text-[#90A1B9]"></textarea>
                     </div>
 
                     <!-- Lead Preview Section -->
-                    <div class="rounded-[16px] border border-[#D8E3F5] bg-[#F8FBFF] p-4">
-                        <h3 class="m-0 font-Jakarta text-[11px] font-semibold text-[#0F172B]">Lead Preview</h3>
-                        <div class="mt-3 grid grid-cols-2 gap-y-2 font-Jakarta text-[10px] text-[#94A3B8]">
-                            <span id="previewName">Name --</span>
-                            <span id="previewPhone">Phone --</span>
-                            <span id="previewArea">Area --</span>
-                            <span id="previewProblem">Problem --</span>
+                    <div class="h-[112px] w-[672px] pt-[12px]">
+                        <div class="h-[100px] w-[672px] rounded-[20px] border border-[#2563EB]/[0.15] bg-[#2563EB]/[0.05] p-[12px]">
+                            <h3 class="m-0 h-[18px] w-[78px] font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#314158]">Lead Preview</h3>
+                            <div class="mt-3 grid grid-cols-2 gap-y-2 font-Jakarta text-[10px] text-[#94A3B8]">
+                                <span id="previewName">Name --</span>
+                                <span id="previewPhone">Phone --</span>
+                                <span id="previewArea">Area --</span>
+                                <span id="previewProblem">Problem --</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Modal Step Two Buttons -->
                     <div class="mt-5 flex gap-3">
                         <button type="button" id="backLeadStep" class="h-[35.5px] w-[58px] rounded-[20px] border border-[#D8E3F5] bg-white font-Jakarta text-[13px] font-semibold text-[#2563EB]">Back</button>
-                        <button type="button" id="submitLeadBtn" class="flex h-[35.5px] flex-1 items-center justify-center rounded-[20px] px-4 py-2" style="background: linear-gradient(90deg, #2563EB 0%, #F97316 100%);">
+                        <button type="button" id="submitLeadBtn" class="flex h-[35.5px] flex-1 items-center justify-center rounded-[20px] px-4 py-2" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
                             <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] text-white">Submit Lead &rarr;</span>
                         </button>
                     </div>
@@ -921,7 +914,7 @@
 
     <!-- Book Appointment Modal -->
     <div id="bookAppointmentModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 px-4">
-        <div class="h-[575px] w-[520px] max-h-[897.3px] max-w-[520px] rounded-[16px] bg-[#FFFFFF] shadow-[0_24px_60px_0_rgba(0,0,0,0.20)]">
+        <div id="bookAppointmentBox" class="h-[575px] w-[520px] max-h-[897.3px] max-w-[520px] rounded-[16px] bg-[#FFFFFF] shadow-[0_24px_60px_0_rgba(0,0,0,0.20)]">
             <!-- Book Appointment Header -->
             <div class="flex h-[65px] w-[520px] items-center justify-between border-b border-[#F1F5F9] pt-[16px] pr-[24px] pb-[16px] pl-[24px]">
                 <h2 class="m-0 h-[23px] w-[139px] font-Jakarta text-[15px] font-bold leading-[22.5px] tracking-normal text-[#0F172B]">Book Appointment</h2>
@@ -933,38 +926,38 @@
             </div>
 
             <!-- Book Appointment Form -->
-            <form class="mx-auto h-[464px] w-[472px]">
+            <form id="bookAppointmentForm" class="mx-auto mt-[24px] h-[464px] w-[472px]">
                 <!-- Patient Mobile Fields -->
-                <div class="grid grid-cols-2 gap-3">
+                <div class="grid h-[58px] w-[472px] grid-cols-2 gap-3">
                     <div>
                         <label class="mb-1 block h-[17px] w-[79px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Patient Name *</label>
                         <input type="text" placeholder="Ramesh Kumar" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
                     </div>
                     <div>
-                        <label class="mb-1 block font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#62748E]">Mobile *</label>
+                        <label class="mb-1 block h-[17px] w-[44px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Mobile *</label>
                         <input type="text" placeholder="+91 98765 43210" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
                     </div>
                 </div>
 
                 <!-- Problem Category Field -->
                 <div class="mt-4">
-                    <label class="mb-1 block font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#62748E]">Problem Category</label>
+                    <label class="mb-1 block h-[17px] w-[98px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Problem Category</label>
                     <input type="text" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
                 </div>
 
                 <!-- Area Address Field -->
                 <div class="mt-4">
-                    <label class="mb-1 block font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#62748E]">Area / Address</label>
+                    <label class="mb-1 block h-[17px] w-[78px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Area / Address</label>
                     <input type="text" placeholder="Banjara Hills, Hyderabad" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
                 </div>
 
                 <!-- Date Time Fields -->
-                <div class="mt-4 grid grid-cols-2 gap-3">
-                    <div>
+                <div class="mt-4 grid h-[58px] w-[472px] grid-cols-2 gap-3">
+                    <div class="h-[58px] w-[230px]">
                         <label class="mb-1 block font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#62748E]">Preferred Date</label>
                         <input type="text" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
                     </div>
-                    <div>
+                    <div class="h-[58px] w-[230px]">
                         <label class="mb-1 block font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#62748E]">Time Slot</label>
                         <input type="text" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
                     </div>
@@ -977,15 +970,331 @@
                 </div>
 
                 <!-- Confirmation Info Box -->
-                <div class="mt-4 rounded-[16px] border border-orange-500/20 bg-orange-50 px-4 py-3 font-Jakarta text-[10px] font-normal leading-[15px] text-[#62748E]">
-                    Confirmation SMS + WhatsApp will be sent to the patient automatically.
+                <div class="mt-4 flex h-[43px] w-[472px] items-center rounded-[16px] border border-orange-500/20 bg-orange-50 px-4">
+                    <span class="block h-[17px] w-[366px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Confirmation SMS + WhatsApp will be sent to the patient automatically.</span>
                 </div>
 
                 <!-- Book Appointment Button -->
-                <button type="button" class="mt-4 h-[36px] w-full rounded-[20px] px-4 py-2 font-Jakarta text-[13px] font-semibold text-white" style="background: linear-gradient(90deg, #2563EB 0%, #F97316 100%);">
-                    Book Appointment
+                <button type="button" id="bookAppointmentSubmit" class="mt-4 flex h-[35.5px] w-[472px] items-center justify-center rounded-[20px] px-4 py-2 font-Jakarta text-[13px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
+                    <span class="block h-[20px] w-[120px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#FFFFFF]">Book Appointment</span>
                 </button>
             </form>
+
+            <!-- Book Appointment Success Section -->
+            <div id="bookAppointmentSuccess" class="hidden h-[334.5px] w-[520px] flex-col items-center justify-center p-6 text-center">
+                <img src="{{ asset('img/leadssubmit.png') }}" alt="Appointment Booked" class="size-[64px] object-contain">
+                <h3 class="mt-4 h-[24px] w-[175px] text-center font-Jakarta text-[16px] font-bold leading-[24px] tracking-normal text-[#0F172B]">Appointment Booked!</h3>
+                <p class="mt-1 h-[39px] w-[320px] text-center font-Jakarta text-[13px] font-normal leading-[19.5px] tracking-normal text-[#62748E]">APT-00248 created. Executive will be notified automatically.</p>
+                <button type="button" class="mt-5 flex h-[36px] w-[66px] items-center justify-center rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] font-Jakarta text-[11px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Order Modal -->
+    <div id="createOrderModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/[0.45] p-4">
+        <div id="createOrderBox" class="h-[406.5px] w-[720px] max-h-[897.3px] max-w-[720px] rounded-[16px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.20)]">
+            <!-- Create Order Header -->
+            <div class="flex h-[65px] w-[720px] items-center justify-between border-b border-[#F1F5F9] pt-[16px] pr-[24px] pb-[16px] pl-[24px]">
+                <h2 class="m-0 h-[23px] w-[97px] font-Jakarta text-[15px] font-bold leading-[22.5px] tracking-normal text-[#0F172B]">Create Order</h2>
+                <button type="button" id="closeCreateOrderModal" class="grid size-8 place-items-center rounded-full bg-[#F1F5F9]">
+                    <svg class="h-[7px] w-[7px]" viewBox="0 0 7 7" fill="none">
+                        <path d="M1 1L6 6M6 1L1 6" stroke="#62748E" stroke-width="1.17" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Create Order Form -->
+            <form id="createOrderStepOne" class="mx-auto mt-[24px] h-[295px] w-[672px] overflow-hidden">
+                <!-- Create Order Steps -->
+                <div class="mb-4 flex h-[24px] w-[672px] items-center gap-[8px]">
+                    <div class="flex items-center gap-2">
+                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-gradient-to-br from-[#2563EB] to-[#F97316] text-[11px] font-bold text-white">1</span>
+                        <span class="block h-[17px] w-[38px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#2563EB]">Patient</span>
+                    </div>
+                    <div class="h-[2px] w-[205.5px] rounded-full bg-[#E2E8F0]"></div>
+                    <div class="flex items-center gap-2">
+                        <span class="grid size-6 place-items-center rounded-full bg-[#E8EEF8] text-[11px] font-bold text-[#94A3B8]">2</span>
+                        <span class="font-Jakarta text-[11px] font-semibold text-[#94A3B8]">Product</span>
+                    </div>
+                    <div class="h-[2px] w-[205.5px] rounded-full bg-[#E2E8F0]"></div>
+                    <div class="flex items-center gap-2">
+                        <span class="grid size-6 place-items-center rounded-full bg-[#E8EEF8] text-[11px] font-bold text-[#94A3B8]">3</span>
+                        <span class="font-Jakarta text-[11px] font-semibold text-[#94A3B8]">Distributor</span>
+                    </div>
+                </div>
+
+                <!-- Patient Name Field -->
+                <div class="h-[57.5px] w-[672px]">
+                    <label class="mb-1 block h-[17px] w-[79px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Patient Name *</label>
+                    <div class="h-[41.5px] w-[672px] pt-[4px]">
+                        <input type="text" placeholder="Ramesh Kumar" class="h-[37px] w-[672px] rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                    </div>
+                </div>
+
+                <!-- Mobile Field -->
+                <div class="h-[70.5px] w-[672px] pt-[12px]">
+                    <label class="mb-1 block h-[17px] w-[44px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Mobile *</label>
+                    <input type="text" placeholder="+91 98765 43210" class="h-[37.5px] w-[672px] rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                </div>
+
+                <!-- Delivery Address Field -->
+                <div class="h-[70.5px] w-[672px] pt-[12px]">
+                    <label class="mb-1 block h-[17px] w-[97px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Delivery Address *</label>
+                    <input type="text" placeholder="12 MG Road, Banjara Hills, Hyderabad" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-[13px] font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                </div>
+
+                <!-- Create Order Next Button -->
+                <button type="button" id="createOrderNextOne" class="mt-4 flex h-[35.5px] w-[672px] items-center justify-center gap-[6px] rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px]" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
+                    <span class="block h-[20px] w-[42px] overflow-visible whitespace-nowrap text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-white">Next →</span>
+                </button>
+            </form>
+
+            <!-- Create Order Product Step -->
+            <div id="createOrderStepTwo" class="mx-auto mt-[24px] hidden h-[382px] w-[672px] overflow-visible">
+                <!-- Create Order Steps -->
+                <div class="flex h-[24px] w-[672px] items-center gap-[8px]">
+                    <div class="flex items-center gap-2">
+                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-[#22C55E] text-[11px] font-bold text-white">
+                            <svg class="h-[10px] w-[10px]" viewBox="0 0 10 10" fill="none">
+                                <path d="M2 5.2L4.1 7.2L8 3" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="block h-[17px] w-[38px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">Patient</span>
+                    </div>
+                    <div class="h-[2px] w-[205.5px] rounded-full bg-[#22C55E]"></div>
+                    <div class="flex items-center gap-2">
+                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-gradient-to-br from-[#2563EB] to-[#F97316] text-[11px] font-bold text-white">2</span>
+                        <span class="block h-[17px] w-[44px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#2563EB]">Product</span>
+                    </div>
+                    <div class="h-[2px] w-[205.5px] rounded-full bg-[#E2E8F0]"></div>
+                    <div class="flex items-center gap-2">
+                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-[#E8EEF8] text-[11px] font-bold text-[#94A3B8]">3</span>
+                        <span class="font-Jakarta text-[11px] font-semibold text-[#94A3B8]">Distributor</span>
+                    </div>
+                </div>
+
+                <!-- Product Field -->
+                <div class="h-[58.5px] w-[672px]">
+                    <label class="mb-1 block h-[17px] w-[51px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Product *</label>
+                    <div class="h-[41.5px] w-[672px] pt-[4px]">
+                        <input type="text" class="h-[37px] w-[672px] rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                    </div>
+                </div>
+
+                <!-- Size Field -->
+                <div class="h-[70.5px] w-[672px] pt-[12px]">
+                    <label class="mb-1 block h-[17px] w-[22px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Size</label>
+                    <input type="text" class="h-[37.5px] w-[672px] rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                </div>
+
+                <!-- Product Card -->
+                <div class="h-[86px] w-[672px] pt-[12px]">
+                    <div class="flex h-[74px] w-[672px] items-center gap-[12px] rounded-[20px] border border-[#2563EB]/[0.12] bg-[#2563EB]/[0.05] p-[12px]">
+                        <span class="grid h-[48px] w-[48px] place-items-center rounded-[20px] bg-[#DBEAFE] text-[#2563EB] [&_svg]:h-[22px] [&_svg]:w-[22px]">
+                            @include('partials.inline-icon', ['name' => 'box'])
+                        </span>
+                        <div class="h-[38px] w-[112.95px]">
+                            <p class="m-0 h-[20px] w-[111px] font-Jakarta text-[13px] font-bold leading-[19.5px] tracking-normal text-[#1D293D]">Knee Brace Pro-L</p>
+                            <p class="m-0 h-[18px] w-[113px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]">Size: Large · ₹4,800</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Instructions Field -->
+                <div class="h-[70.5px] w-[672px] pt-[12px]">
+                    <label class="mb-1 block h-[17px] w-[105px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Special Instructions</label>
+                    <div class="h-[41.5px] w-[672px] pt-[4px]">
+                        <input type="text" placeholder="Any measurement notes or special requests..." class="h-[37.5px] w-[672px] rounded-full border border-[#E8EEF8] px-[13px] font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                    </div>
+                </div>
+
+                <!-- Create Order Product Buttons -->
+                <div class="h-[66.5px] w-[672px] pt-[20px]">
+                    <div class="flex h-[46.5px] w-[672.26px] items-start gap-[12px] pt-[8px]">
+                        <button type="button" id="backCreateOrderStep" class="flex h-[38.5px] w-[67px] items-center justify-center rounded-[20px] border-[1.5px] border-[#2563EB]/[0.20] bg-white pt-[8px] pr-[16px] pb-[8px] pl-[16px]">
+                            <span class="block h-[20px] w-[32px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#2563EB]">Back</span>
+                        </button>
+                        <button type="button" id="createOrderNextTwo" class="flex h-[38.5px] w-[594px] items-center justify-center rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px]" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
+                            <span class="block h-[20px] w-[42px] overflow-visible whitespace-nowrap text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-white">Next →</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Order Distributor Step -->
+            <div id="createOrderStepThree" class="hidden h-[423.5px] w-[720px] overflow-visible p-[24px]">
+                <div class="h-[376px] w-[672px]">
+                <!-- Create Order Steps -->
+                <div class="flex h-[24px] w-[672px] items-center gap-[8px]">
+                    <div class="flex items-center gap-2">
+                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-[#22C55E] text-[11px] font-bold text-white">
+                            <svg class="h-[10px] w-[10px]" viewBox="0 0 10 10" fill="none">
+                                <path d="M2 5.2L4.1 7.2L8 3" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="block h-[17px] w-[38px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">Patient</span>
+                    </div>
+                    <div class="h-[2px] w-[205.5px] rounded-full bg-[#22C55E]"></div>
+                    <div class="flex items-center gap-2">
+                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-[#22C55E] text-[11px] font-bold text-white">
+                            <svg class="h-[10px] w-[10px]" viewBox="0 0 10 10" fill="none">
+                                <path d="M2 5.2L4.1 7.2L8 3" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="block h-[17px] w-[44px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">Product</span>
+                    </div>
+                    <div class="h-[2px] w-[205.5px] rounded-full bg-[#22C55E]"></div>
+                    <div class="flex items-center gap-2">
+                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full bg-gradient-to-br from-[#2563EB] to-[#F97316] text-[11px] font-bold text-white">3</span>
+                        <span class="font-Jakarta text-[11px] font-semibold text-[#2563EB]">Distributor</span>
+                    </div>
+                </div>
+
+                    <!-- Create Order Distributor Content -->
+                    <div class="h-[285.5px] w-[672px] pt-[8px]">
+                        <!-- Distributor Field -->
+                        <div class="h-[57.5px] w-[672px]">
+                            <div class="h-[21px] w-[672px] pb-[4px]">
+                                <label class="block h-[17px] w-[65px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Distributor *</label>
+                            </div>
+                            <div class="h-[41.5px] w-[672px] pt-[4px]">
+                                <input type="text" class="h-[36.5px] w-[672px] rounded-[20px] border border-[#E2E8F0] bg-white px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                            </div>
+                        </div>
+
+                        <!-- Order Summary -->
+                        <div class="h-[220px] w-[672px] pt-[12px]">
+                            <div class="h-[208px] w-[672px] rounded-[20px] border border-[#E2E8F0] bg-[#F8FAFC] p-[16px]">
+                                <h3 class="m-0 h-[18px] w-[93px] font-Jakarta text-[12px] font-bold leading-[18px] tracking-normal text-[#314158]">Order Summary</h3>
+                                <div class="mt-[2px]">
+                                    <div class="flex h-[26px] w-[638px] items-start justify-between pt-[8px]">
+                                        <p class="m-0 h-[18px] w-[41px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]">Patient</p>
+                                        <p class="m-0 h-[18px] w-[12px] text-right font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#1D293D]">—</p>
+                                    </div>
+                                    <div class="flex h-[26px] w-[638px] items-start justify-between pt-[8px]">
+                                        <p class="m-0 font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]">Product</p>
+                                        <p class="m-0 h-[18px] w-[102px] text-right font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#1D293D]">Knee Brace Pro-L</p>
+                                    </div>
+                                    <div class="flex h-[26px] w-[638px] items-start justify-between pt-[8px]">
+                                        <p class="m-0 font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]">Size</p>
+                                        <p class="m-0 text-right font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#1D293D]">Large</p>
+                                    </div>
+                                    <div class="flex h-[26px] w-[638px] items-start justify-between pt-[8px]">
+                                        <p class="m-0 font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]">Distributor</p>
+                                        <p class="m-0 text-right font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#1D293D]">MediSupply Co.</p>
+                                    </div>
+                                    <div class="flex h-[26px] w-[638px] items-start justify-between pt-[8px]">
+                                        <p class="m-0 font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]">Delivery</p>
+                                        <p class="m-0 text-right font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#1D293D]">—</p>
+                                    </div>
+                                    <div class="flex h-[26px] w-[638px] items-start justify-between pt-[8px]">
+                                        <p class="m-0 font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]">Amount</p>
+                                        <p class="m-0 text-right font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#1D293D]">₹4,800</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create Order Submit Buttons -->
+                    <div class="h-[66.5px] w-[672px] pt-[20px]">
+                        <div class="flex h-[46.5px] w-[672.26px] items-start gap-[12px] pt-[8px]">
+                            <button type="button" id="backCreateOrderStepThree" class="flex h-[38.5px] w-[67px] items-center justify-center rounded-[20px] border-[1.5px] border-[#2563EB]/[0.20] bg-white pt-[8px] pr-[16px] pb-[8px] pl-[16px]">
+                                <span class="block h-[20px] w-[32px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#2563EB]">Back</span>
+                            </button>
+                            <button type="button" class="flex h-[38.5px] w-[593.26px] items-center justify-center rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px]" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
+                                <span class="block h-[20px] w-[100px] overflow-visible whitespace-nowrap text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-white">Create Order →</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Assign Executive Modal -->
+    <div id="assignExecutiveModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 px-4">
+        <div class="h-[470px] w-[520px] max-h-[897.3px] max-w-[520px] rounded-[16px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.20)]">
+            <!-- Assign Executive Header -->
+            <div class="flex h-[65px] w-[520px] items-center justify-between border-b border-[#F1F5F9] pt-[16px] pr-[24px] pb-[16px] pl-[24px]">
+                <h2 class="m-0 h-[23px] w-[123px] font-Jakarta text-[15px] font-bold leading-[22.5px] tracking-normal text-[#0F172B]">Assign Executive</h2>
+                <button type="button" id="closeAssignExecutiveModal" class="grid size-8 place-items-center rounded-full bg-[#F1F5F9]">
+                    <svg class="h-[7px] w-[7px]" viewBox="0 0 7 7" fill="none">
+                        <path d="M1 1L6 6M6 1L1 6" stroke="#62748E" stroke-width="1.17" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Assign Executive Form -->
+            <div class="h-[405px] w-[520px] p-[24px]">
+                <div class="h-[361px] w-[472px]">
+                <div class="h-[57.5px] w-[472px]">
+                    <div class="h-[21px] w-[472px] pb-[4px]">
+                        <label class="block h-[17px] w-[107px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Lead / Appointment</label>
+                    </div>
+                    <input type="text" class="h-[36.5px] w-[472px] rounded-[20px] border border-[#E2E8F0] bg-white px-4 font-Jakarta text-[11px] outline-none">
+                </div>
+
+                <div class="h-[252px] w-[472px] pt-[16px]">
+                    <label class="block h-[17px] w-[472px] font-Jakarta text-[11px] font-semibold leading-[16.5px] text-[#62748E]">Select Executive</label>
+                    <div>
+                        <div class="h-[73px] w-[472px] pt-[8px]">
+                            <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
+                                <div class="flex items-center gap-[12px]">
+                                    <img src="{{ asset('img/user.png') }}" alt="Sunil Mehta" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <div class="h-[37px] w-[303px]">
+                                        <p class="m-0 h-[20px] w-[72px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Sunil Mehta</p>
+                                        <p class="m-0 h-[17px] w-[138px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Central HYD · 4 visits today</p>
+                                    </div>
+                                </div>
+                                <span class="flex h-[21px] w-[81px] items-center gap-[6px] rounded-full bg-[#22C55E]/[0.12] pt-[2px] pr-[10px] pb-[2px] pl-[10px]">
+                                    <span class="h-[6px] w-[6px] rounded-full bg-[#22C55E]"></span>
+                                    <span class="h-[17px] w-[49px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">Available</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="h-[73px] w-[472px] pt-[8px]">
+                            <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
+                                <div class="flex items-center gap-[12px]">
+                                    <img src="{{ asset('img/user.png') }}" alt="Reena Kaur" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <div>
+                                        <p class="m-0 h-[20px] w-[70px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Reena Kaur</p>
+                                        <p class="m-0 h-[17px] w-[129px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">North HYD · 5 visits today</p>
+                                    </div>
+                                </div>
+                                <span class="flex h-[21px] w-[58px] items-center gap-[6px] rounded-full bg-[#F59E0B]/[0.12] pt-[2px] pr-[10px] pb-[2px] pl-[10px]">
+                                    <span class="h-[6px] w-[6px] rounded-full bg-[#F59E0B]"></span>
+                                    <span class="h-[17px] w-[26px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#F59E0B]">Busy</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="h-[73px] w-[472px] pt-[8px]">
+                            <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
+                                <div class="flex items-center gap-[12px]">
+                                    <img src="{{ asset('img/user.png') }}" alt="Vijay Rajan" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <div>
+                                        <p class="m-0 h-[20px] w-[67px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Vijay Rajan</p>
+                                        <p class="m-0 h-[17px] w-[127px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">West HYD · 3 visits today</p>
+                                    </div>
+                                </div>
+                                <span class="flex h-[21px] w-[81px] items-center gap-[6px] rounded-full bg-[#22C55E]/[0.12] pt-[2px] pr-[10px] pb-[2px] pl-[10px]">
+                                    <span class="h-[6px] w-[6px] rounded-full bg-[#22C55E]"></span>
+                                    <span class="h-[17px] w-[49px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">Available</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="h-[51.5px] w-[472px] pt-[16px]">
+                        <button type="button" class="flex h-[35.5px] w-[472px] items-center justify-center gap-[6px] rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] font-Jakarta text-[13px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
+                            Assign Executive
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -995,9 +1304,27 @@
         var openNewLeadModal = document.getElementById('openNewLeadModal');
         var closeNewLeadModal = document.getElementById('closeNewLeadModal');
         var newLeadModal = document.getElementById('newLeadModal');
+        var openCreateOrderModal = document.getElementById('openCreateOrderModal');
+        var closeCreateOrderModal = document.getElementById('closeCreateOrderModal');
+        var createOrderModal = document.getElementById('createOrderModal');
+        var createOrderBox = document.getElementById('createOrderBox');
+        var createOrderStepOne = document.getElementById('createOrderStepOne');
+        var createOrderStepTwo = document.getElementById('createOrderStepTwo');
+        var createOrderStepThree = document.getElementById('createOrderStepThree');
+        var createOrderNextOne = document.getElementById('createOrderNextOne');
+        var createOrderNextTwo = document.getElementById('createOrderNextTwo');
+        var backCreateOrderStep = document.getElementById('backCreateOrderStep');
+        var backCreateOrderStepThree = document.getElementById('backCreateOrderStepThree');
         var openBookAppointmentModal = document.getElementById('openBookAppointmentModal');
         var closeBookAppointmentModal = document.getElementById('closeBookAppointmentModal');
         var bookAppointmentModal = document.getElementById('bookAppointmentModal');
+        var bookAppointmentBox = document.getElementById('bookAppointmentBox');
+        var bookAppointmentForm = document.getElementById('bookAppointmentForm');
+        var bookAppointmentSubmit = document.getElementById('bookAppointmentSubmit');
+        var bookAppointmentSuccess = document.getElementById('bookAppointmentSuccess');
+        var openAssignExecutiveModal = document.getElementById('openAssignExecutiveModal');
+        var closeAssignExecutiveModal = document.getElementById('closeAssignExecutiveModal');
+        var assignExecutiveModal = document.getElementById('assignExecutiveModal');
         var leadStepOne = document.getElementById('leadStepOne');
         var leadStepTwo = document.getElementById('leadStepTwo');
         var leadSuccessStep = document.getElementById('leadSuccessStep');
@@ -1012,6 +1339,99 @@
         var previewPhone = document.getElementById('previewPhone');
         var previewArea = document.getElementById('previewArea');
         var previewProblem = document.getElementById('previewProblem');
+        var revenueLeadChart = document.getElementById('revenueLeadChart');
+
+        // Revenue chart
+        function drawRevenueLeadChart() {
+            if (!revenueLeadChart) {
+                return;
+            }
+
+            var rect = revenueLeadChart.getBoundingClientRect();
+            var ratio = window.devicePixelRatio || 1;
+            revenueLeadChart.width = rect.width * ratio;
+            revenueLeadChart.height = rect.height * ratio;
+
+            var ctx = revenueLeadChart.getContext('2d');
+            ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+            ctx.clearRect(0, 0, rect.width, rect.height);
+
+            var chartLeft = 130;
+            var labelLeft = 125;
+            var chartRight = rect.width - 110;
+            var chartTop = 24;
+            var chartBottom = 152;
+            var maxValue = 832;
+            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+            var labels = [832, 624, 416, 208];
+            var leads = [180, 220, 195, 270, 255, 330];
+            var orders = [130, 160, 145, 190, 180, 220];
+            var revenue = [500, 600, 545, 700, 670, 832];
+
+            function getX(index) {
+                return chartLeft + ((chartRight - chartLeft) / (months.length - 1)) * index;
+            }
+
+            function getY(value) {
+                return chartBottom - (value / maxValue) * (chartBottom - chartTop);
+            }
+
+            ctx.font = '400 9px Inter, sans-serif';
+            ctx.fillStyle = 'rgba(15, 23, 42, 0.4)';
+            ctx.textAlign = 'right';
+            ctx.strokeStyle = '#E8EEF8';
+            ctx.lineWidth = 1;
+            ctx.setLineDash([5, 5]);
+
+            labels.forEach(function (label) {
+                var y = getY(label);
+                ctx.beginPath();
+                ctx.moveTo(chartLeft, y);
+                ctx.lineTo(chartRight, y);
+                ctx.stroke();
+                ctx.fillText(label, labelLeft, y + 3);
+            });
+
+            ctx.setLineDash([]);
+            ctx.textAlign = 'center';
+            ctx.font = '400 9px Inter, sans-serif';
+            ctx.fillStyle = 'rgba(15, 23, 42, 0.38)';
+            months.forEach(function (month, index) {
+                ctx.fillText(month, getX(index), chartBottom + 24);
+            });
+
+            function drawLine(values, color, showDot) {
+                ctx.beginPath();
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 2.2;
+                values.forEach(function (value, index) {
+                    var x = getX(index);
+                    var y = getY(value);
+                    if (index === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                });
+                ctx.stroke();
+
+                if (showDot) {
+                    var lastX = getX(values.length - 1);
+                    var lastY = getY(values[values.length - 1]);
+                    ctx.beginPath();
+                    ctx.fillStyle = color;
+                    ctx.arc(lastX, lastY, 5, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+
+            drawLine(revenue, '#A855F7', true);
+            drawLine(leads, '#2563EB', true);
+            drawLine(orders, '#F97316', true);
+        }
+
+        drawRevenueLeadChart();
+        window.addEventListener('resize', drawRevenueLeadChart);
 
         // Open modal
         openNewLeadModal.onclick = function (event) {
@@ -1027,8 +1447,74 @@
         // Open book appointment modal
         openBookAppointmentModal.onclick = function (event) {
             event.preventDefault();
+            bookAppointmentBox.classList.remove('h-[399.5px]');
+            bookAppointmentBox.classList.add('h-[575px]');
+            bookAppointmentForm.classList.remove('hidden');
+            bookAppointmentSuccess.classList.add('hidden');
+            bookAppointmentSuccess.classList.remove('flex');
             bookAppointmentModal.classList.remove('hidden');
             bookAppointmentModal.classList.add('flex');
+        };
+
+        // Open assign executive modal
+        openAssignExecutiveModal.onclick = function (event) {
+            event.preventDefault();
+            assignExecutiveModal.classList.remove('hidden');
+            assignExecutiveModal.classList.add('flex');
+        };
+
+        // Open create order modal
+        openCreateOrderModal.onclick = function (event) {
+            event.preventDefault();
+            createOrderBox.classList.remove('h-[493.5px]');
+            createOrderBox.classList.remove('h-[488.5px]');
+            createOrderBox.classList.add('h-[406.5px]');
+            createOrderStepOne.classList.remove('hidden');
+            createOrderStepTwo.classList.add('hidden');
+            createOrderStepThree.classList.add('hidden');
+            createOrderModal.classList.remove('hidden');
+            createOrderModal.classList.add('flex');
+        };
+
+        // Go to create order product step
+        createOrderNextOne.onclick = function () {
+            createOrderBox.classList.remove('h-[406.5px]');
+            createOrderBox.classList.add('h-[493.5px]');
+            createOrderStepOne.classList.add('hidden');
+            createOrderStepTwo.classList.remove('hidden');
+        };
+
+        // Go to create order distributor step
+        createOrderNextTwo.onclick = function () {
+            createOrderBox.classList.remove('h-[493.5px]');
+            createOrderBox.classList.add('h-[488.5px]');
+            createOrderStepTwo.classList.add('hidden');
+            createOrderStepThree.classList.remove('hidden');
+        };
+
+        // Back to create order patient step
+        backCreateOrderStep.onclick = function () {
+            createOrderBox.classList.remove('h-[493.5px]');
+            createOrderBox.classList.add('h-[406.5px]');
+            createOrderStepTwo.classList.add('hidden');
+            createOrderStepOne.classList.remove('hidden');
+        };
+
+        // Back to create order product step
+        backCreateOrderStepThree.onclick = function () {
+            createOrderBox.classList.remove('h-[488.5px]');
+            createOrderBox.classList.add('h-[493.5px]');
+            createOrderStepThree.classList.add('hidden');
+            createOrderStepTwo.classList.remove('hidden');
+        };
+
+        // Show book appointment success
+        bookAppointmentSubmit.onclick = function () {
+            bookAppointmentBox.classList.remove('h-[575px]');
+            bookAppointmentBox.classList.add('h-[399.5px]');
+            bookAppointmentForm.classList.add('hidden');
+            bookAppointmentSuccess.classList.remove('hidden');
+            bookAppointmentSuccess.classList.add('flex');
         };
 
         // Go to step two and show preview details
@@ -1068,6 +1554,29 @@
         closeBookAppointmentModal.onclick = function () {
             bookAppointmentModal.classList.add('hidden');
             bookAppointmentModal.classList.remove('flex');
+            bookAppointmentBox.classList.remove('h-[399.5px]');
+            bookAppointmentBox.classList.add('h-[575px]');
+            bookAppointmentForm.classList.remove('hidden');
+            bookAppointmentSuccess.classList.add('hidden');
+            bookAppointmentSuccess.classList.remove('flex');
+        };
+
+        // Close assign executive modal
+        closeAssignExecutiveModal.onclick = function () {
+            assignExecutiveModal.classList.add('hidden');
+            assignExecutiveModal.classList.remove('flex');
+        };
+
+        // Close create order modal
+        closeCreateOrderModal.onclick = function () {
+            createOrderModal.classList.add('hidden');
+            createOrderModal.classList.remove('flex');
+            createOrderBox.classList.remove('h-[493.5px]');
+            createOrderBox.classList.remove('h-[488.5px]');
+            createOrderBox.classList.add('h-[406.5px]');
+            createOrderStepThree.classList.add('hidden');
+            createOrderStepTwo.classList.add('hidden');
+            createOrderStepOne.classList.remove('hidden');
         };
     </script>
 
