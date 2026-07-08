@@ -646,7 +646,7 @@
                             </div>
                         </div>
                         <div class="grid grid-cols-[28px_minmax(0,1fr)] items-center gap-2.5">
-                            <span class="grid h-[28px] w-[28px] place-items-center rounded-[20px] bg-[#F59E0B]/[0.12] text-[#F59E0B]">
+                            <span class="grid h-[28px] w-[28px] place-items-center rounded-[20px] bg-[#F97316]/[0.12] text-[#F97316]">
                                 <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <circle cx="12" cy="12" r="9" />
@@ -659,8 +659,8 @@
                                 <small class="block h-[15px] w-[50px] font-jakarta text-[10px] font-normal leading-[15px] text-[#62748E]">18 min ago</small>
                             </div>
                         </div>
-                        <div class="grid grid-cols-[24px_minmax(0,1fr)] items-center gap-2.5">
-                            <span class="grid size-6 place-items-center rounded-full bg-orange-50 text-orange-500">
+                        <div class="grid grid-cols-[28px_minmax(0,1fr)] items-center gap-2.5">
+                            <span class="grid h-[28px] w-[28px] place-items-center rounded-[20px] bg-[#F59E0B]/[0.12] text-[#F59E0B]">
                                 <svg viewBox="0 0 24 24" class="size-3" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="m21 8-9-5-9 5 9 5 9-5Z" />
