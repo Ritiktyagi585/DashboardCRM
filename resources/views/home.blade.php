@@ -719,7 +719,7 @@
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#A855F7]">Assign Executive</span>
                         </a>
 
-                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#14B8A614]/15 bg-[#14B8A614]/[0.08] px-4 py-3 text-center text-teal-500">
+                        <a href="#" id="openExportReportModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#14B8A614]/15 bg-[#14B8A614]/[0.08] px-4 py-3 text-center text-teal-500">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#14B8A6]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'phone'])</span>
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#14B8A6]">Export<br>Report</span>
                         </a>
@@ -1298,6 +1298,71 @@
         </div>
     </div>
 
+    <!-- Export Report Modal -->
+    <div id="exportReportModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 px-4">
+        <div class="h-[370px] w-[520px] max-h-[897.3px] max-w-[520px] rounded-[16px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.20)]">
+            <!-- Export Report Header -->
+            <div class="flex h-[65px] w-[520px] items-center justify-between border-b border-[#F1F5F9] pt-[16px] pr-[24px] pb-[16px] pl-[24px]">
+                <h2 class="m-0 font-Jakarta text-[15px] font-bold leading-[22.5px] tracking-normal text-[#0F172B]">Export Report</h2>
+                <button type="button" id="closeExportReportModal" class="grid size-8 place-items-center rounded-full bg-[#F1F5F9]">
+                    <svg class="h-[7px] w-[7px]" viewBox="0 0 7 7" fill="none">
+                        <path d="M1 1L6 6M6 1L1 6" stroke="#62748E" stroke-width="1.17" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Export Report Form -->
+            <div class="h-[305px] w-[520px] p-[24px]">
+                <div class="h-[258px] w-[472px]">
+                    <div class="h-[57.5px] w-[472px]">
+                        <div class="h-[21px] w-[472px] pb-[4px]">
+                            <label class="block h-[17px] w-[65px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Report Type</label>
+                        </div>
+                        <input type="text" class="h-[36.5px] w-[472px] rounded-[20px] border border-[#E2E8F0] bg-white px-4 font-Jakarta text-[13px] outline-none">
+                    </div>
+
+                    <div class="h-[74px] w-[472px] pt-[16px]">
+                        <div class="flex h-[58px] w-[472px] gap-[12px]">
+                            <div class="h-[58px] w-[230px]">
+                                <div class="h-[17px] w-[230px]">
+                                    <label class="block h-[17px] w-[55px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Date From</label>
+                                </div>
+                                <div class="h-[41.5px] w-[230px] pt-[4px]">
+                                    <input type="text" class="h-[32.5px] w-[230px] rounded-[20px] border border-[#E2E8F0] bg-white px-4 font-Jakarta text-[13px] outline-none">
+                                </div>
+                            </div>
+                            <div class="h-[58px] w-[230px]">
+                                <div class="h-[17px] w-[230px]">
+                                    <label class="block h-[17px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Date To</label>
+                                </div>
+                                <div class="h-[41.5px] w-[230px] pt-[4px]">
+                                    <input type="text" class="h-[32.5px] w-[230px] rounded-[20px] border border-[#E2E8F0] bg-white px-4 font-Jakarta text-[13px] outline-none">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-[75px] w-[472px] pt-[16px]">
+                        <div class="h-[17px] w-[472px]">
+                            <label class="block h-[17px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Format</label>
+                        </div>
+                        <div class="flex h-[42px] w-[472px] gap-[8px] pt-[4px]">
+                            <button type="button" class="h-[32.5px] w-[149.33px] rounded-[20px] border border-[#E2E8F0] bg-white font-Jakarta text-[11px] font-semibold text-[#62748E]">Excel</button>
+                            <button type="button" class="h-[32.5px] w-[149.33px] rounded-[20px] border border-[#E2E8F0] bg-white font-Jakarta text-[11px] font-semibold text-[#62748E]">PDF</button>
+                            <button type="button" class="h-[32.5px] w-[149.33px] rounded-[20px] border border-[#2563EB] bg-white font-Jakarta text-[11px] font-semibold text-[#2563EB]">CSV</button>
+                        </div>
+                    </div>
+
+                    <div class="h-[51.5px] w-[472px] pt-[16px]">
+                        <button type="button" class="flex h-[35.5px] w-[472px] items-center justify-center gap-[6px] rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] font-Jakarta text-[13px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
+                            <span class="h-[20px] w-[139px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#FFFFFF]">Generate &amp; Download</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Dashboard Script Section -->
     <script>
         // Modal elements
@@ -1325,6 +1390,9 @@
         var openAssignExecutiveModal = document.getElementById('openAssignExecutiveModal');
         var closeAssignExecutiveModal = document.getElementById('closeAssignExecutiveModal');
         var assignExecutiveModal = document.getElementById('assignExecutiveModal');
+        var openExportReportModal = document.getElementById('openExportReportModal');
+        var closeExportReportModal = document.getElementById('closeExportReportModal');
+        var exportReportModal = document.getElementById('exportReportModal');
         var leadStepOne = document.getElementById('leadStepOne');
         var leadStepTwo = document.getElementById('leadStepTwo');
         var leadSuccessStep = document.getElementById('leadSuccessStep');
@@ -1463,6 +1531,13 @@
             assignExecutiveModal.classList.add('flex');
         };
 
+        // Open export report modal
+        openExportReportModal.onclick = function (event) {
+            event.preventDefault();
+            exportReportModal.classList.remove('hidden');
+            exportReportModal.classList.add('flex');
+        };
+
         // Open create order modal
         openCreateOrderModal.onclick = function (event) {
             event.preventDefault();
@@ -1565,6 +1640,12 @@
         closeAssignExecutiveModal.onclick = function () {
             assignExecutiveModal.classList.add('hidden');
             assignExecutiveModal.classList.remove('flex');
+        };
+
+        // Close export report modal
+        closeExportReportModal.onclick = function () {
+            exportReportModal.classList.add('hidden');
+            exportReportModal.classList.remove('flex');
         };
 
         // Close create order modal
