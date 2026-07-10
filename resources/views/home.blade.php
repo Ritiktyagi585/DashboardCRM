@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -724,7 +724,7 @@
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#14B8A6]">Export<br>Report</span>
                         </a>
 
-                        <a href="#" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#F59E0B14]/15 bg-[#F59E0B14]/[0.08] px-4 py-3 text-center text-amber-500">
+                        <a href="#" id="openSyncCrmModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#F59E0B14]/15 bg-[#F59E0B14]/[0.08] px-4 py-3 text-center text-amber-500">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#F59E0B]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'refresh'])</span>
                             <span class="block h-[14px] w-[54px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#F59E0B]">Sync CRM</span>
                         </a>
@@ -931,7 +931,7 @@
                 <div class="grid h-[58px] w-[472px] grid-cols-2 gap-3">
                     <div>
                         <label class="mb-1 block h-[17px] w-[79px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Patient Name *</label>
-                        <input type="text" placeholder="Ramesh Kumar" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
+                        <input type="text" placeholder="Ramesh Kumar" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:block placeholder:h-[16px] placeholder:w-[204px] placeholder:text-[#90A1B9]">
                     </div>
                     <div>
                         <label class="mb-1 block h-[17px] w-[44px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Mobile *</label>
@@ -1241,7 +1241,7 @@
                         <div class="h-[73px] w-[472px] pt-[8px]">
                             <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
                                 <div class="flex items-center gap-[12px]">
-                                    <img src="{{ asset('img/user.png') }}" alt="Sunil Mehta" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <img src="{{ asset('img/Sunil Mehta.png') }}" alt="Sunil Mehta" class="h-[36px] w-[36px] rounded-full object-cover">
                                     <div class="h-[37px] w-[303px]">
                                         <p class="m-0 h-[20px] w-[72px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Sunil Mehta</p>
                                         <p class="m-0 h-[17px] w-[138px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Central HYD · 4 visits today</p>
@@ -1257,7 +1257,7 @@
                         <div class="h-[73px] w-[472px] pt-[8px]">
                             <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
                                 <div class="flex items-center gap-[12px]">
-                                    <img src="{{ asset('img/user.png') }}" alt="Reena Kaur" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <img src="{{ asset('img/Reena Kaur.png') }}" alt="Reena Kaur" class="h-[36px] w-[36px] rounded-full object-cover">
                                     <div>
                                         <p class="m-0 h-[20px] w-[70px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Reena Kaur</p>
                                         <p class="m-0 h-[17px] w-[129px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">North HYD · 5 visits today</p>
@@ -1273,7 +1273,7 @@
                         <div class="h-[73px] w-[472px] pt-[8px]">
                             <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
                                 <div class="flex items-center gap-[12px]">
-                                    <img src="{{ asset('img/user.png') }}" alt="Vijay Rajan" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <img src="{{ asset('img/Vijay Rajan.png') }}" alt="Vijay Rajan" class="h-[36px] w-[36px] rounded-full object-cover">
                                     <div>
                                         <p class="m-0 h-[20px] w-[67px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Vijay Rajan</p>
                                         <p class="m-0 h-[17px] w-[127px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">West HYD · 3 visits today</p>
@@ -1347,16 +1347,72 @@
                             <label class="block h-[17px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Format</label>
                         </div>
                         <div class="flex h-[42px] w-[472px] gap-[8px] pt-[4px]">
-                            <button type="button" class="h-[32.5px] w-[149.33px] rounded-[20px] border border-[#E2E8F0] bg-white font-Jakarta text-[11px] font-semibold text-[#62748E]">Excel</button>
-                            <button type="button" class="h-[32.5px] w-[149.33px] rounded-[20px] border border-[#E2E8F0] bg-white font-Jakarta text-[11px] font-semibold text-[#62748E]">PDF</button>
-                            <button type="button" class="h-[32.5px] w-[149.33px] rounded-[20px] border border-[#2563EB] bg-white font-Jakarta text-[11px] font-semibold text-[#2563EB]">CSV</button>
+                            <button type="button" class="h-[38px] w-[152px] rounded-[20px] border-2 border-[#E2E8F0] bg-white pt-[8px] pb-[8px] text-center font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#64748B]">Excel</button>
+                            <button type="button" class="h-[38px] w-[152px] rounded-[20px] border-2 border-[#E2E8F0] bg-white pt-[8px] pb-[8px] text-center font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#64748B]">PDF</button>
+                            <button type="button" class="h-[38px] w-[152px] rounded-[20px] border-2 border-[#2563EB] bg-[#2563EB]/[0.06] pt-[8px] pb-[8px] text-center font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#2563EB]">CSV</button>
                         </div>
                     </div>
 
                     <div class="h-[51.5px] w-[472px] pt-[16px]">
                         <button type="button" class="flex h-[35.5px] w-[472px] items-center justify-center gap-[6px] rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] font-Jakarta text-[13px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
-                            <span class="h-[20px] w-[139px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#FFFFFF]">Generate &amp; Download</span>
+                            <img src="{{ asset('img/downloadicon.png') }}" alt="" class="h-[13px] w-[13px]">
+                            <span class="h-[20px] w-[139px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#FFFFFF]">Generate & Download</span>
                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sync CRM Modal -->
+    <div id="syncCrmModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 px-4">
+        <div class="h-[420px] w-[520px] max-h-[897.3px] max-w-[520px] rounded-[16px] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.20)]">
+            <!-- Sync CRM Header -->
+            <div class="flex h-[65px] w-[520px] items-center justify-between border-b border-[#F1F5F9] pt-[16px] pr-[24px] pb-[16px] pl-[24px]">
+                <h2 class="m-0 font-Jakarta text-[15px] font-bold leading-[22.5px] tracking-normal text-[#0F172B]">Sync CRM</h2>
+                <button type="button" id="closeSyncCrmModal" class="grid size-8 place-items-center rounded-full bg-[#F1F5F9]">
+                    <svg class="h-[7px] w-[7px]" viewBox="0 0 7 7" fill="none">
+                        <path d="M1 1L6 6M6 1L1 6" stroke="#62748E" stroke-width="1.17" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Sync CRM Content -->
+            <div class="h-[355px] w-[520px] p-[24px]">
+                <div class="flex h-[307px] w-[472px] flex-col items-center justify-center pt-[16px] pb-[16px]">
+                    <div class="flex h-[121px] w-[472px] flex-col items-center justify-center gap-[12px] pt-[16px] pb-[16px]">
+                        <div class="grid h-[48px] w-[48px] place-items-center rounded-[20px] bg-[#2563EB]/[0.12] text-[#2563EB]">
+                            @include('partials.inline-icon', ['name' => 'refresh'])
+                        </div>
+                        <p class="m-0 font-Jakarta text-[13px] font-bold leading-[19.5px] tracking-normal text-[#0F172B]">Syncing CRM Data...</p>
+                    </div>
+                    <div class="h-[24px] w-[472px] pt-[16px]">
+                        <div class="h-[8px] w-[472px] overflow-hidden rounded-full bg-[#F1F5F9]">
+                            <div class="h-[8px] w-[225.31px] rounded-full" style="background: linear-gradient(90deg, #2563EB 0%, #F97316 100%);"></div>
+                        </div>
+                    </div>
+
+                    <div class="h-[130px] w-[472px] pt-[16px]">
+                        <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">
+                            <img src="{{ asset('img/Container.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <span class="block h-[18px] w-[79px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#22C55E]">Syncing leads</span>
+                        </div>
+                        <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">
+                            <img src="{{ asset('img/Container.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <span class="block h-[18px] w-[137px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#22C55E]">Updating appointments</span>
+                        </div>
+                        <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">
+                            <img src="{{ asset('img/circle.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <span class="block h-[18px] w-[101px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#94A3B8]">Refreshing orders</span>
+                        </div>
+                        <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">
+                            <img src="{{ asset('img/circle.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <span class="block h-[18px] w-[143px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#94A3B8]">Calculating commissions</span>
+                        </div>
+                        <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">
+                            <img src="{{ asset('img/circle.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <span class="block h-[18px] w-[52px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#94A3B8]">Finalizing</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1393,6 +1449,9 @@
         var openExportReportModal = document.getElementById('openExportReportModal');
         var closeExportReportModal = document.getElementById('closeExportReportModal');
         var exportReportModal = document.getElementById('exportReportModal');
+        var openSyncCrmModal = document.getElementById('openSyncCrmModal');
+        var closeSyncCrmModal = document.getElementById('closeSyncCrmModal');
+        var syncCrmModal = document.getElementById('syncCrmModal');
         var leadStepOne = document.getElementById('leadStepOne');
         var leadStepTwo = document.getElementById('leadStepTwo');
         var leadSuccessStep = document.getElementById('leadSuccessStep');
@@ -1538,6 +1597,13 @@
             exportReportModal.classList.add('flex');
         };
 
+        // Open sync crm modal
+        openSyncCrmModal.onclick = function (event) {
+            event.preventDefault();
+            syncCrmModal.classList.remove('hidden');
+            syncCrmModal.classList.add('flex');
+        };
+
         // Open create order modal
         openCreateOrderModal.onclick = function (event) {
             event.preventDefault();
@@ -1646,6 +1712,12 @@
         closeExportReportModal.onclick = function () {
             exportReportModal.classList.add('hidden');
             exportReportModal.classList.remove('flex');
+        };
+
+        // Close sync crm modal
+        closeSyncCrmModal.onclick = function () {
+            syncCrmModal.classList.add('hidden');
+            syncCrmModal.classList.remove('flex');
         };
 
         // Close create order modal
