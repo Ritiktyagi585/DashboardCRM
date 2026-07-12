@@ -935,7 +935,7 @@
                     </div>
                     <div>
                         <label class="mb-1 block h-[17px] w-[44px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Mobile *</label>
-                        <input type="text" placeholder="+91 98765 43210" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
+                        <input type="text" placeholder="+91 98765 43210" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:block placeholder:h-[16px] placeholder:w-[204px] placeholder:text-[#90A1B9]">
                     </div>
                 </div>
 
@@ -948,7 +948,7 @@
                 <!-- Area Address Field -->
                 <div class="mt-4">
                     <label class="mb-1 block h-[17px] w-[78px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#62748E]">Area / Address</label>
-                    <input type="text" placeholder="Banjara Hills, Hyderabad" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[11px] outline-none">
+                    <input type="text" placeholder="Banjara Hills, Hyderabad" class="h-[37px] w-full rounded-full border border-[#E8EEF8] px-4 font-Jakarta text-[13px] font-normal leading-none text-[#90A1B9] outline-none placeholder:block placeholder:h-[16px] placeholder:w-[446px] placeholder:text-[#90A1B9]">
                 </div>
 
                 <!-- Date Time Fields -->
