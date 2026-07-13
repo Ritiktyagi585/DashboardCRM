@@ -50,7 +50,7 @@
                 <div class="my-3 max-[720px]:my-0 max-[720px]:flex">
                     <p class="mb-1.5 ml-0.5 text-[8px] font-bold uppercase text-[#7890ad] max-[1100px]:hidden">
                         Operations</p>
-                    <a href="#"
+                    <a href="/lead-management"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'users'])
                         <span class="max-[1100px]:hidden">Lead Management</span></a>
                     <a href="#"
