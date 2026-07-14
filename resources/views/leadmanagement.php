@@ -212,7 +212,7 @@
 
             <!-- Lead Management Content Container -->
             <div class="-mx-4 flex h-[933px] w-[calc(100%+2rem)] flex-col gap-[20px] p-[24px]">
-                <div class="flex h-[885px] w-full flex-col gap-[16px]">
+                <div class="flex h-[666.5px] w-full flex-col gap-[16px]">
 
             <!-- KPI Cards Section -->
             <section class="grid h-[101px] w-full grid-cols-4 gap-[12px]">
@@ -228,109 +228,233 @@
                     </div>
                 </div>
                 <div class="h-[101px] rounded-[16px] border border-white/[0.92] bg-white/[0.88] p-[16px] shadow-[0_1px_4px_rgba(0,0,0,0.06)]">
-                    <p class="m-0 h-[17px] font-Jakarta text-[11px] font-normal leading-[16.5px] text-[#62748E]">New Today</p>
-                    <div class="mt-[4px] h-[30px] font-Jakarta text-[28px] font-bold leading-[30px] text-[#0F172B]">42</div>
-                    <div class="mt-[18px] h-[4px] w-full rounded-full bg-[#F1F5F9]">
-                        <div class="h-[4px] w-[55%] rounded-full bg-[#F97316]"></div>
+                    <div class="h-[36px] w-full font-Jakarta text-[28px] font-bold leading-[36px] text-[#0F172B]">42</div>
+                    <div class="h-[19px] w-[231.75px] pt-[2px]">
+                        <p class="m-0 h-[17px] w-[58px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">New Today</p>
+                    </div>
+                    <div class="h-[12px] w-[231.75px] pt-[8px]">
+                        <div class="h-[4px] w-[231.75px] rounded-full bg-[#F1F5F9]">
+                            <div class="h-[4px] w-[173.81px] rounded-full bg-[#F97316]"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="h-[101px] rounded-[16px] border border-white/[0.92] bg-white/[0.88] p-[16px] shadow-[0_1px_4px_rgba(0,0,0,0.06)]">
-                    <p class="m-0 h-[17px] font-Jakarta text-[11px] font-normal leading-[16.5px] text-[#62748E]">Hot Leads</p>
-                    <div class="mt-[4px] h-[30px] font-Jakarta text-[28px] font-bold leading-[30px] text-[#0F172B]">128</div>
-                    <div class="mt-[18px] h-[4px] w-full rounded-full bg-[#F1F5F9]">
-                        <div class="h-[4px] w-[60%] rounded-full bg-[#FB2C36]"></div>
+                    <div class="h-[36px] w-full font-Jakarta text-[28px] font-bold leading-[36px] text-[#0F172B]">128</div>
+                    <div class="h-[19px] w-[231.75px] pt-[2px]">
+                        <p class="m-0 h-[17px] font-Jakarta text-[11px] font-normal leading-[16.5px] text-[#62748E]">Hot Leads</p>
+                    </div>
+                    <div class="h-[12px] w-[231.75px] pt-[8px]">
+                        <div class="h-[4px] w-[231.75px] rounded-full bg-[#F1F5F9]">
+                            <div class="h-[4px] w-[173.81px] rounded-full bg-[#EF4444]"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="h-[101px] rounded-[16px] border border-white/[0.92] bg-white/[0.88] p-[16px] shadow-[0_1px_4px_rgba(0,0,0,0.06)]">
-                    <p class="m-0 h-[17px] font-Jakarta text-[11px] font-normal leading-[16.5px] text-[#62748E]">Conversion</p>
-                    <div class="mt-[4px] h-[30px] font-Jakarta text-[28px] font-bold leading-[30px] text-[#0F172B]">16.8%</div>
-                    <div class="mt-[18px] h-[4px] w-full rounded-full bg-[#F1F5F9]">
-                        <div class="h-[4px] w-[72%] rounded-full bg-[#22C55E]"></div>
+                    <div class="h-[36px] w-full font-Jakarta text-[28px] font-bold leading-[36px] text-[#0F172B]">16.8%</div>
+                    <div class="h-[19px] w-[231.75px] pt-[2px]">
+                        <p class="m-0 h-[17px] font-Jakarta text-[11px] font-normal leading-[16.5px] text-[#62748E]">Conversion</p>
+                    </div>
+                    <div class="h-[12px] w-[231.75px] pt-[8px]">
+                        <div class="h-[4px] w-[231.75px] rounded-full bg-[#F1F5F9]">
+                            <div class="h-[4px] w-[173.81px] rounded-full bg-[#22C55E]"></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Lead Tools Section -->
             <section class="flex h-[37.5px] w-full items-center gap-[12px]">
-                <div class="flex h-[37.5px] flex-1 items-center gap-[8px] rounded-[20px] border border-[#E2E8F0] bg-white pt-[8px] pr-[12px] pb-[8px] pl-[12px]">
+                <div class="flex h-[37.5px] w-[779px] items-center gap-[8px] rounded-[20px] border border-[#E2E8F0] bg-white pt-[8px] pr-[12px] pb-[8px] pl-[12px]">
                     <svg viewBox="0 0 24 24" class="size-3 text-[#94A3B8]" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="7" />
                         <path d="m21 21-4.3-4.3" />
                     </svg>
-                    <input type="search" placeholder="Search leads by name, phone, area..." class="h-[19.5px] w-full bg-transparent font-Jakarta text-[13px] font-normal leading-[19.5px] text-[#0F172A]/50 outline-none placeholder:text-[#0F172A]/50">
+                    <input type="search" placeholder="Search leads by name, phone, area..." class="h-[16px] w-[731.2px] bg-transparent font-Jakarta text-[13px] font-normal leading-none tracking-normal text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
                 </div>
-                <button class="flex h-[33px] w-[93px] items-center justify-center gap-[6px] rounded-[20px] border border-[#E2E8F0] bg-white font-Jakarta text-[12px] font-semibold leading-[18px] text-[#0F172B]">
-                    All Status
-                    <svg class="size-[13px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="m6 9 6 6 6-6" />
+                <button class="flex h-[33px] w-[100px] items-center justify-center gap-[6px] rounded-[20px] border-[1.5px] border-[#2563EB]/20 bg-white pt-[6px] pr-[12px] pb-[6px] pl-[12px] font-Jakarta text-[12px] font-semibold leading-[18px] text-[#0F172B]">
+                    <span class="h-[18px] w-[54px] text-center font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#0F172A]">All Status</span>
+                    <svg class="size-[13px]" viewBox="0 0 13 13" fill="none">
+                        <path d="M3.25 5L6.5 8.25L9.75 5" stroke="#0F172A" stroke-width="1.08" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
-                <button class="flex h-[33px] w-[76px] items-center justify-center gap-[6px] rounded-[20px] border border-[#2563EB]/20 bg-white font-Jakarta text-[12px] font-semibold leading-[18px] text-[#2563EB]">
+                <button class="flex h-[33px] w-[75px] items-center justify-center gap-[6px] rounded-[20px] border-[1.5px] border-[#2563EB]/20 bg-white pt-[6px] pr-[12px] pb-[6px] pl-[12px] font-Jakarta text-[12px] font-semibold leading-[18px] text-[#2563EB]">
                     <svg class="size-[13px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M3 4h18l-7 8v6l-4 2v-8L3 4z" />
                     </svg>
-                    Filter
+                    <span class="h-[18px] w-[30px] text-center font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#2563EB]">Filter</span>
                 </button>
-                <button class="flex h-[33px] w-[96px] items-center justify-center gap-[6px] rounded-[20px] font-Jakarta text-[12px] font-semibold leading-[18px] text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
+                <button class="flex h-[30px] w-[97px] shrink-0 items-center justify-center gap-[6px] rounded-[20px] pt-[6px] pr-[12px] pb-[6px] pl-[12px] font-Jakarta text-[12px] font-semibold leading-[18px] text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
                     <span class="text-[14px]">+</span>
-                    Add Lead
+                    <span class="whitespace-nowrap">Add Lead</span>
                 </button>
             </section>
 
             <!-- Lead Table Section -->
-            <section class="overflow-hidden rounded-[16px] bg-white/95 shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
+            <section class="h-[532px] overflow-hidden rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
                 <table class="w-full border-collapse">
                     <thead>
                         <tr class="h-[52px] border-b border-[#E2E8F0] bg-[#F8FAFC] text-left font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-normal text-[#62748E]">
-                            <th class="w-[95px] pl-[64px]">Lead ID</th>
-                            <th class="w-[170px]">Patient</th>
-                            <th class="w-[110px]">Problem</th>
-                            <th class="w-[120px]">Area</th>
-                            <th class="w-[110px]">Status</th>
-                            <th class="w-[120px]">Agent</th>
-                            <th class="w-[130px]">Score</th>
-                            <th class="w-[90px]">Date</th>
-                            <th class="w-[90px]">Actions</th>
+                            <th class="h-[41.5px] w-[135.23px] border-b border-[#F1F5F9] bg-[#F8FAFC] pl-[49.68px]">Lead ID</th>
+                            <th class="h-[41.5px] w-[137.95px] border-b border-[#F1F5F9] bg-[#F8FAFC]">
+                                <span class="block h-[17px] w-[47px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Patient</span>
+                            </th>
+                            <th class="h-[41.5px] w-[132.26px] border-b border-[#F1F5F9] bg-[#F8FAFC]">
+                                <span class="block h-[17px] w-[58px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Problem</span>
+                            </th>
+                            <th class="h-[41.5px] w-[110.19px] border-b border-[#F1F5F9] bg-[#F8FAFC]">Area</th>
+                            <th class="w-[110px]">
+                                <span class="block h-[17px] w-[44px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Status</span>
+                            </th>
+                            <th class="h-[41.5px] w-[144.97px] border-b border-[#F1F5F9] bg-[#F8FAFC]">
+                                <span class="block h-[17px] w-[40px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Agent</span>
+                            </th>
+                            <th class="h-[41.5px] w-[130.16px] border-b border-[#F1F5F9] bg-[#F8FAFC]">
+                                <span class="block h-[17px] w-[42px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Score</span>
+                            </th>
+                            <th class="h-[41.5px] w-[71.08px] border-b border-[#F1F5F9] bg-[#F8FAFC]">
+                                <span class="block h-[17px] w-[30px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Date</span>
+                            </th>
+                            <th class="h-[41.5px] w-[101.6px] border-b border-[#F1F5F9] bg-[#F8FAFC]">
+                                <span class="block h-[17px] w-[54px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Actions</span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody class="font-Jakarta text-[12px] leading-[18px] text-[#314158]">
                         <?php
                         $leads = [
-                            ['LD-290', 'Ramesh Kumar', '+91 98765 43210', 'Knee Pain', 'Banjara Hills', 'Booked', 'Priya S.', 92, 'Jun 18', '#F97316', 72],
-                            ['LD-289', 'Sunita Sharma', '+91 98765 43209', 'Back Pain', 'Jubilee Hills', 'Follow-Up', 'Arjun K.', 78, 'Jun 18', '#F59E0B', 50],
-                            ['LD-288', 'Priya Nair', '+91 98765 43208', 'Shoulder', 'Hitech City', 'Measured', 'Sneha R.', 95, 'Jun 17', '#22C55E', 82],
-                            ['LD-287', 'Anil Mehta', '+91 98765 43207', 'Cervical', 'Kondapur', 'Called', 'Rohit P.', 65, 'Jun 17', '#A855F7', 42],
-                            ['LD-286', 'Geeta Rao', '+91 54321 09876', 'Arthritis', 'Gachibowli', 'Delivered', 'Priya S.', 99, 'Jun 16', '#22C55E', 88],
-                            ['LD-285', 'Vikram Singh', '+91 43210 98765', 'Knee Pain', 'Madhapur', 'New', 'Unassigned', 55, 'Jun 16', '#2563EB', 35],
-                            ['LD-284', 'Anita Das', '+91 32109 87654', 'Post Surgery', 'Kukatpally', 'Confirmed', 'Arjun K.', 88, 'Jun 15', '#14B8A6', 70],
-                            ['LD-283', 'Suresh Reddy', '+91 21098 76543', 'Back Pain', 'Miyapur', 'Assigned', 'Sneha R.', 72, 'Jun 15', '#6366F1', 46],
+                            [
+                                'id' => 'LD-290',
+                                'name' => 'Ramesh Kumar',
+                                'phone' => '+91 98765 43210',
+                                'problem' => 'Knee Pain',
+                                'area' => 'Banjara Hills',
+                                'status' => 'Booked',
+                                'agent' => 'Priya S.',
+                                'score' => 92,
+                                'date' => 'Jun 18',
+                                'color' => '#F97316',
+                                'bar' => 72,
+                            ],
+                            [
+                                'id' => 'LD-289',
+                                'name' => 'Sunita Sharma',
+                                'phone' => '+91 98765 43209',
+                                'problem' => 'Back Pain',
+                                'area' => 'Jubilee Hills',
+                                'status' => 'Follow-Up',
+                                'agent' => 'Arjun K.',
+                                'score' => 78,
+                                'date' => 'Jun 18',
+                                'color' => '#F59E0B',
+                                'bar' => 50,
+                            ],
+                            [
+                                'id' => 'LD-288',
+                                'name' => 'Priya Nair',
+                                'phone' => '+91 98765 43208',
+                                'problem' => 'Shoulder',
+                                'area' => 'Hitech City',
+                                'status' => 'Measured',
+                                'agent' => 'Sneha R.',
+                                'score' => 95,
+                                'date' => 'Jun 17',
+                                'color' => '#22C55E',
+                                'bar' => 82,
+                            ],
+                            [
+                                'id' => 'LD-287',
+                                'name' => 'Anil Mehta',
+                                'phone' => '+91 98765 43207',
+                                'problem' => 'Cervical',
+                                'area' => 'Kondapur',
+                                'status' => 'Called',
+                                'agent' => 'Rohit P.',
+                                'score' => 65,
+                                'date' => 'Jun 17',
+                                'color' => '#A855F7',
+                                'bar' => 42,
+                            ],
+                            [
+                                'id' => 'LD-286',
+                                'name' => 'Geeta Rao',
+                                'phone' => '+91 54321 09876',
+                                'problem' => 'Arthritis',
+                                'area' => 'Gachibowli',
+                                'status' => 'Delivered',
+                                'agent' => 'Priya S.',
+                                'score' => 99,
+                                'date' => 'Jun 16',
+                                'color' => '#22C55E',
+                                'bar' => 88,
+                            ],
+                            [
+                                'id' => 'LD-285',
+                                'name' => 'Vikram Singh',
+                                'phone' => '+91 43210 98765',
+                                'problem' => 'Knee Pain',
+                                'area' => 'Madhapur',
+                                'status' => 'New',
+                                'agent' => 'Unassigned',
+                                'score' => 55,
+                                'date' => 'Jun 16',
+                                'color' => '#2563EB',
+                                'bar' => 35,
+                            ],
+                            [
+                                'id' => 'LD-284',
+                                'name' => 'Anita Das',
+                                'phone' => '+91 32109 87654',
+                                'problem' => 'Post Surgery',
+                                'area' => 'Kukatpally',
+                                'status' => 'Confirmed',
+                                'agent' => 'Arjun K.',
+                                'score' => 88,
+                                'date' => 'Jun 15',
+                                'color' => '#14B8A6',
+                                'bar' => 70,
+                            ],
+                            [
+                                'id' => 'LD-283',
+                                'name' => 'Suresh Reddy',
+                                'phone' => '+91 21098 76543',
+                                'problem' => 'Back Pain',
+                                'area' => 'Miyapur',
+                                'status' => 'Assigned',
+                                'agent' => 'Sneha R.',
+                                'score' => 72,
+                                'date' => 'Jun 15',
+                                'color' => '#6366F1',
+                                'bar' => 46,
+                            ],
                         ];
                         ?>
                         <?php foreach ($leads as $lead) : ?>
-                            <tr class="h-[62px] border-b border-[#F1F5F9] last:border-b-0">
-                                <td class="pl-[64px] font-semibold text-[#2563EB]"><?= $lead[0] ?></td>
-                                <td>
-                                    <p class="m-0 font-semibold text-[#0F172B]"><?= $lead[1] ?></p>
-                                    <p class="m-0 text-[10px] leading-[15px] text-[#94A3B8]"><?= $lead[2] ?></p>
+                            <tr class="border-b border-[#F1F5F9] last:border-b-0">
+                                <td class="h-[61px] w-[135.23px] border-b border-[#F8FAFC] pl-[49.68px] font-semibold text-[#2563EB]"><?= $lead['id'] ?></td>
+                                <td class="h-[61px] w-[137.95px] border-b border-[#F8FAFC]">
+                                    <div class="flex h-[37px] w-[105.95px] flex-col">
+                                        <p class="m-0 h-[20px] w-[93px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]"><?= $lead['name'] ?></p>
+                                        <p class="m-0 text-[10px] leading-[15px] text-[#94A3B8]"><?= $lead['phone'] ?></p>
+                                    </div>
                                 </td>
-                                <td><span class="rounded-full bg-[#2563EB]/10 px-[8px] py-[3px] text-[10px] font-semibold text-[#2563EB]"><?= $lead[3] ?></span></td>
-                                <td class="text-[#62748E]"><?= $lead[4] ?></td>
-                                <td><span class="rounded-full px-[8px] py-[3px] text-[10px] font-semibold" style="background: <?= $lead[9] ?>1A; color: <?= $lead[9] ?>;"><?= $lead[5] ?></span></td>
+                                <td><span class="rounded-full bg-[#2563EB]/10 px-[8px] py-[3px] text-[10px] font-semibold text-[#2563EB]"><?= $lead['problem'] ?></span></td>
+                                <td class="text-[#62748E]"><?= $lead['area'] ?></td>
+                                <td><span class="rounded-full px-[8px] py-[3px] text-[10px] font-semibold" style="background: <?= $lead['color'] ?>1A; color: <?= $lead['color'] ?>;"><?= $lead['status'] ?></span></td>
                                 <td>
                                     <div class="flex items-center gap-[8px]">
-                                        <span class="grid size-[24px] place-items-center rounded-full text-[10px] font-bold text-white" style="background: linear-gradient(160deg, #2563EB 0%, #F97316 100%);"><?= substr($lead[6], 0, 1) ?></span>
-                                        <span class="text-[#62748E]"><?= $lead[6] ?></span>
+                                        <span class="grid size-[24px] place-items-center rounded-full text-[10px] font-bold text-white" style="background: linear-gradient(160deg, #2563EB 0%, #F97316 100%);"><?= substr($lead['agent'], 0, 1) ?></span>
+                                        <span class="text-[#62748E]"><?= $lead['agent'] ?></span>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="flex items-center gap-[8px]">
                                         <div class="h-[4px] w-[72px] rounded-full bg-[#E2E8F0]">
-                                            <div class="h-[4px] rounded-full <?= $lead[7] >= 90 ? 'bg-[#22C55E]' : ($lead[7] >= 70 ? 'bg-[#F59E0B]' : 'bg-[#FB2C36]') ?>" style="width: <?= $lead[10] ?>%;"></div>
+                                            <div class="h-[4px] rounded-full <?= $lead['score'] >= 90 ? 'bg-[#22C55E]' : ($lead['score'] >= 70 ? 'bg-[#F59E0B]' : 'bg-[#FB2C36]') ?>" style="width: <?= $lead['bar'] ?>%;"></div>
                                         </div>
-                                        <span class="text-[11px] font-semibold text-[#314158]"><?= $lead[7] ?></span>
+                                        <span class="text-[11px] font-semibold text-[#314158]"><?= $lead['score'] ?></span>
                                     </div>
                                 </td>
-                                <td class="text-[#62748E]"><?= $lead[8] ?></td>
+                                <td class="text-[#62748E]"><?= $lead['date'] ?></td>
                                 <td>
                                     <div class="flex items-center gap-[14px] text-[#2563EB]">
                                         <svg class="size-[13px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -347,8 +471,6 @@
             </section>
 
             <!-- Pagination Section -->
-            </div>
-
             <footer class="flex h-[32px] items-center justify-between">
                 <p class="m-0 font-Jakarta text-[11px] font-normal leading-[16.5px] text-[#62748E]">Showing 1-8 of 1,840 leads</p>
                 <div class="flex items-center gap-[8px]">
@@ -359,6 +481,7 @@
                     <span class="grid size-[28px] place-items-center rounded-full bg-white text-[11px] font-semibold text-[#62748E]">230</span>
                 </div>
             </footer>
+            </div>
             </div>
         </main>
     </div>
