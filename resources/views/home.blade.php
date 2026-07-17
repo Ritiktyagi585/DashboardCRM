@@ -20,7 +20,7 @@
 
             <!-- Logo Section -->
             <div class="-mx-[8px] flex h-[64px] w-[239px] items-center gap-[8px] border-b border-[#2563EB]/10 pr-[16px] pl-[16px]">
-                <img src="{{ asset('img/NorHealLogo.png') }}" alt="NorHeal Logo" class="h-[32px] w-auto object-contain">
+                <img src="/img/NorHealLogo.png" alt="NorHeal Logo" class="h-[32px] w-auto object-contain">
 
                 <div
                     class="ml-auto grid size-[32px] place-items-center rounded-full bg-[#F1F5FF] text-[#2563EB] max-[1100px]:hidden">
@@ -40,7 +40,7 @@
                     <a href="#"
                         class="relative flex h-[35.5px] w-[223px] items-center gap-[8px] rounded-[20px] pt-[8px] pr-[10px] pb-[8px] pl-[10px] text-[11px] font-semibold text-blue-600 after:absolute after:right-2.5 after:size-[5px] after:rounded-full after:bg-orange-500 [&_svg]:size-[13px] [&_svg]:text-blue-600 max-[1100px]:justify-center max-[1100px]:px-0"
                         style="background: linear-gradient(90deg, rgba(37,99,235,0.12) 0%, rgba(249,115,22,0.07) 100%);">
-                        <img src="{{ asset('img/Icon.png') }}" alt="Dashboard Icon" class="size-4">
+                        <img src="/img/Icon.png" alt="Dashboard Icon" class="size-4">
                         <span
                             class="h-[20px] w-[70px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#2563EB] max-[1100px]:hidden">Dashboard</span>
                     </a>
@@ -52,19 +52,19 @@
                         Operations</p>
                     <a href="/lead-management"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'users'])
-                        <span class="max-[1100px]:hidden">Lead Management</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Lead Management</span></a>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'phone'])
-                        <span class="max-[1100px]:hidden">Calling Team</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Calling Team</span></a>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'calendar'])
-                        <span class="max-[1100px]:hidden">Appointments</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Appointments</span></a>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'map'])
-                        <span class="max-[1100px]:hidden">Field Ops</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Field Ops</span></a>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'ruler'])
-                        <span class="max-[1100px]:hidden">Measurements</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Measurements</span></a>
                 </div>
 
                 <!-- Sidebar Commerce Menu -->
@@ -73,10 +73,10 @@
                     </p>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'box'])
-                        <span class="max-[1100px]:hidden">Order Management</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Order Management</span></a>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'store'])
-                        <span class="max-[1100px]:hidden">Distributors</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Distributors</span></a>
                 </div>
 
                 <!-- Sidebar Finance Menu -->
@@ -85,10 +85,10 @@
                     </p>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'dollar'])
-                        <span class="max-[1100px]:hidden">Commission Engine</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Commission Engine</span></a>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'wallet'])
-                        <span class="max-[1100px]:hidden">Wallet & Payout</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Wallet & Payout</span></a>
                 </div>
 
                 <!-- Sidebar Intelligence Menu -->
@@ -97,10 +97,10 @@
                         Intelligence</p>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'chart'])
-                        <span class="max-[1100px]:hidden">Reports & Analytics</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Reports & Analytics</span></a>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'shield'])
-                        <span class="max-[1100px]:hidden">Fraud Detection</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Fraud Detection</span></a>
                 </div>
 
                 <!-- Sidebar System Menu -->
@@ -109,7 +109,7 @@
                     </p>
                     <a href="#"
                         class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986] [&_svg]:size-[13px] [&_svg]:text-[#7d95b3] max-[1100px]:justify-center max-[1100px]:px-0">@include('partials.inline-icon', ['name' => 'settings'])
-                        <span class="max-[1100px]:hidden">Admin Panel</span></a>
+                        <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal max-[1100px]:hidden">Admin Panel</span></a>
                 </div>
             </nav>
 
@@ -117,7 +117,7 @@
             <div
                 class="-mx-[8px] flex h-[70px] w-[239px] items-center border-t border-[#2563EB]/10 pt-[8px] pr-[8px] pb-[12px] pl-[8px] max-[720px]:hidden">
                 <div class="flex h-[49px] w-[223px] items-center gap-[10px] rounded-[20px] bg-[#2563EB]/[0.05] p-[8px] max-[1100px]:justify-center">
-                    <img src="{{ asset('img/user.png') }}" alt="Rahul Sharma" class="size-[33px] rounded-full object-cover">
+                    <img src="/img/user.png" alt="Rahul Sharma" class="size-[33px] rounded-full object-cover">
                     <div class="w-[142px] max-[1100px]:hidden">
                         <strong class="block h-[18px] w-[79px] font-Jakarta text-[12px] font-bold leading-[18px] tracking-normal text-[#0F172A]">Rahul Sharma</strong>
                         <span class="block h-[15px] w-[61px] font-Jakarta text-[10px] font-normal leading-[15px] tracking-normal text-[#94A3B8]">Super Admin</span>
@@ -161,7 +161,7 @@
                         </svg>
                         <input type="search" placeholder="Search anything..."
                             class="h-[19.5px] w-[192px] bg-transparent text-[13px] font-normal leading-[19.5px] text-[#0F172A]/50 outline-none placeholder:text-[#0F172A]/50">
-                        <img src="{{ asset('img/Text.png') }}" alt="Shortcut" class="h-[19px] w-[27px] object-contain">
+                        <img src="/img/Text.png" alt="Shortcut" class="h-[19px] w-[27px] object-contain">
                     </div>
 
                     <!-- Notification Button Section -->
@@ -181,7 +181,7 @@
                     <!-- Profile Button Section -->
                     <button type="button" class="grid size-[36px] cursor-pointer place-items-center rounded-full"
                         aria-label="Profile">
-                        <img src="{{ asset('img/user.png') }}" alt="User" class="size-[36px] rounded-full object-cover">
+                        <img src="/img/user.png" alt="User" class="size-[36px] rounded-full object-cover">
                     </button>
                 </div>
             </header>
@@ -205,7 +205,7 @@
                                 class="h-[30px] w-[72.65px] pt-[4px] font-Jakarta text-[26px] font-black leading-[26px] text-[#0F172A]">
                                 1,840
                             </h3>
-                            <img src="{{ asset('img/Sparkline.png') }}" alt="Leads Sparkline"
+                            <img src="/img/Sparkline.png" alt="Leads Sparkline"
                                 class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
                         <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
@@ -226,7 +226,7 @@
                             <h3
                                 class="w-[52px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
                                 480</h3>
-                            <img src="{{ asset('img/orngSpark.png') }}" alt="Leads Sparkline"
+                            <img src="/img/orngspark.png" alt="Leads Sparkline"
                                 class="h-[38px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
                         <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
@@ -247,7 +247,7 @@
                             <h3
                                 class="w-[45px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
                                 310</h3>
-                            <img src="{{ asset('img/greenSpark.png') }}" alt="Leads Sparkline"
+                            <img src="/img/greenspark.png" alt="Leads Sparkline"
                                 class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
                         <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
@@ -268,7 +268,7 @@
                             <h3
                                 class="w-[86px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
                                 ₹13.6L</h3>
-                            <img src="{{ asset('img/purpleSpark.png') }}" alt="Leads Sparkline"
+                            <img src="/img/purplespark.png" alt="Leads Sparkline"
                                 class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
                         <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
@@ -289,7 +289,7 @@
                             <h3
                                 class="w-[82px] h-[26px] font-Jakarta font-black text-[26px] leading-[26px] text-[#0F172A]">
                                 16.8%</h3>
-                            <img src="{{ asset('img/darkSpark.png') }}" alt="Leads Sparkline"
+                            <img src="/img/darkspark.png" alt="Leads Sparkline"
                                 class="h-[36px] w-[83px] -translate-y-[12px] object-contain">
                         </div>
                         <div class="absolute bottom-[8px] left-4 flex h-[33px] w-[173px] items-start gap-[6px] pt-[12px]">
@@ -895,7 +895,7 @@
             <div id="leadSuccessStep" class="hidden h-[334.5px] w-full flex-col items-center justify-center px-6 pb-6 pt-12 text-center">
                 <!-- Success Icon -->
                 <div class="flex h-[80px] w-[64px] flex-col items-center pb-4">
-                    <img src="{{ asset('img/leadssubmit.png') }}" alt="Lead Submitted" class="size-[64px] object-contain">
+                    <img src="/img/leadssubmit.png" alt="Lead Submitted" class="size-[64px] object-contain">
                 </div>
 
                 <!-- Success Message -->
@@ -982,7 +982,7 @@
 
             <!-- Book Appointment Success Section -->
             <div id="bookAppointmentSuccess" class="hidden h-[334.5px] w-[520px] flex-col items-center justify-center p-6 text-center">
-                <img src="{{ asset('img/leadssubmit.png') }}" alt="Appointment Booked" class="size-[64px] object-contain">
+                <img src="/img/leadssubmit.png" alt="Appointment Booked" class="size-[64px] object-contain">
                 <h3 class="mt-4 h-[24px] w-[175px] text-center font-Jakarta text-[16px] font-bold leading-[24px] tracking-normal text-[#0F172B]">Appointment Booked!</h3>
                 <p class="mt-1 h-[39px] w-[320px] text-center font-Jakarta text-[13px] font-normal leading-[19.5px] tracking-normal text-[#62748E]">APT-00248 created. Executive will be notified automatically.</p>
                 <button type="button" class="mt-5 flex h-[36px] w-[66px] items-center justify-center rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] font-Jakarta text-[11px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">Done</button>
@@ -1241,7 +1241,7 @@
                         <div class="h-[73px] w-[472px] pt-[8px]">
                             <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
                                 <div class="flex items-center gap-[12px]">
-                                    <img src="{{ asset('img/Sunil Mehta.png') }}" alt="Sunil Mehta" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <img src="/img/Sunil Mehta.png" alt="Sunil Mehta" class="h-[36px] w-[36px] rounded-full object-cover">
                                     <div class="h-[37px] w-[303px]">
                                         <p class="m-0 h-[20px] w-[72px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Sunil Mehta</p>
                                         <p class="m-0 h-[17px] w-[138px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Central HYD · 4 visits today</p>
@@ -1257,7 +1257,7 @@
                         <div class="h-[73px] w-[472px] pt-[8px]">
                             <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
                                 <div class="flex items-center gap-[12px]">
-                                    <img src="{{ asset('img/Reena Kaur.png') }}" alt="Reena Kaur" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <img src="/img/Reena Kaur.png" alt="Reena Kaur" class="h-[36px] w-[36px] rounded-full object-cover">
                                     <div>
                                         <p class="m-0 h-[20px] w-[70px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Reena Kaur</p>
                                         <p class="m-0 h-[17px] w-[129px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">North HYD · 5 visits today</p>
@@ -1273,7 +1273,7 @@
                         <div class="h-[73px] w-[472px] pt-[8px]">
                             <div class="flex h-[65px] w-[472px] items-center justify-between gap-[12px] rounded-[20px] border-2 border-[#F1F5F9] p-[12px]">
                                 <div class="flex items-center gap-[12px]">
-                                    <img src="{{ asset('img/Vijay Rajan.png') }}" alt="Vijay Rajan" class="h-[36px] w-[36px] rounded-full object-cover">
+                                    <img src="/img/Vijay Rajan.png" alt="Vijay Rajan" class="h-[36px] w-[36px] rounded-full object-cover">
                                     <div>
                                         <p class="m-0 h-[20px] w-[67px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]">Vijay Rajan</p>
                                         <p class="m-0 h-[17px] w-[127px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">West HYD · 3 visits today</p>
@@ -1355,7 +1355,7 @@
 
                     <div class="h-[51.5px] w-[472px] pt-[16px]">
                         <button type="button" class="flex h-[35.5px] w-[472px] items-center justify-center gap-[6px] rounded-[20px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] font-Jakarta text-[13px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">
-                            <img src="{{ asset('img/downloadicon.png') }}" alt="" class="h-[13px] w-[13px]">
+                            <img src="/img/downloadicon.png" alt="" class="h-[13px] w-[13px]">
                             <span class="h-[20px] w-[139px] text-center font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#FFFFFF]">Generate & Download</span>
                         </button>
                     </div>
@@ -1394,23 +1394,23 @@
 
                     <div class="h-[130px] w-[472px] pt-[16px]">
                         <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">
-                            <img src="{{ asset('img/Container.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <img src="/img/Container.png" alt="" class="h-[16px] w-[16px]">
                             <span class="block h-[18px] w-[79px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#22C55E]">Syncing leads</span>
                         </div>
                         <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#22C55E]">
-                            <img src="{{ asset('img/Container.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <img src="/img/Container.png" alt="" class="h-[16px] w-[16px]">
                             <span class="block h-[18px] w-[137px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#22C55E]">Updating appointments</span>
                         </div>
                         <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">
-                            <img src="{{ asset('img/circle.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <img src="/img/circle.png" alt="" class="h-[16px] w-[16px]">
                             <span class="block h-[18px] w-[101px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#94A3B8]">Refreshing orders</span>
                         </div>
                         <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">
-                            <img src="{{ asset('img/circle.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <img src="/img/circle.png" alt="" class="h-[16px] w-[16px]">
                             <span class="block h-[18px] w-[143px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#94A3B8]">Calculating commissions</span>
                         </div>
                         <div class="flex h-[24px] w-[472px] items-center gap-[8px] pt-[6px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#94A3B8]">
-                            <img src="{{ asset('img/circle.png') }}" alt="" class="h-[16px] w-[16px]">
+                            <img src="/img/circle.png" alt="" class="h-[16px] w-[16px]">
                             <span class="block h-[18px] w-[52px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#94A3B8]">Finalizing</span>
                         </div>
                     </div>

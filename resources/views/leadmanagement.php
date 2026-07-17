@@ -30,7 +30,7 @@
 
             <!-- Logo Section -->
             <div class="-mx-[8px] flex h-[64px] w-[239px] items-center gap-[8px] border-b border-[#2563EB]/10 pr-[16px] pl-[16px]">
-                <img src="<?= asset('img/NorHealLogo.png') ?>" alt="NorHeal Logo" class="h-[32px] w-auto object-contain">
+                <img src="/img/NorHealLogo.png" alt="NorHeal Logo" class="h-[32px] w-auto object-contain">
                 <div class="ml-auto grid size-[32px] place-items-center rounded-full bg-[#F1F5FF] text-[#2563EB]">
                     <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="m15 18-6-6 6-6" />
@@ -45,7 +45,7 @@
                 <div class="mb-3 mt-1">
                     <p class="mb-1.5 ml-0.5 text-[8px] font-bold uppercase text-[#7890ad]">Overview</p>
                     <a href="/" class="flex h-[30px] items-center gap-[9px] rounded-[15px] px-2.5 text-[11px] font-semibold text-[#526986]">
-                        <img src="<?= asset('img/Icon.png') ?>" alt="Dashboard Icon" class="size-[13px]">
+                        <img src="/img/Icon.png" alt="Dashboard Icon" class="size-[13px]">
                         <span class="font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal">Dashboard</span>
                     </a>
                 </div>
@@ -158,7 +158,7 @@
             <!-- User Box Section -->
             <div class="-mx-[8px] flex h-[70px] w-[239px] items-center border-t border-[#2563EB]/10 pt-[8px] pr-[8px] pb-[12px] pl-[8px]">
                 <div class="flex h-[49px] w-[223px] items-center gap-[10px] rounded-[20px] bg-[#2563EB]/[0.05] p-[8px]">
-                    <img src="<?= asset('img/user.png') ?>" alt="Rahul Sharma" class="size-[33px] rounded-full object-cover">
+                    <img src="/img/user.png" alt="Rahul Sharma" class="size-[33px] rounded-full object-cover">
                     <div class="w-[142px]">
                         <strong class="block h-[18px] w-[79px] font-Jakarta text-[12px] font-bold leading-[18px] tracking-normal text-[#0F172A]">Rahul Sharma</strong>
                         <span class="block h-[15px] w-[61px] font-Jakarta text-[10px] font-normal leading-[15px] tracking-normal text-[#94A3B8]">Super Admin</span>
@@ -189,7 +189,7 @@
                             <path d="m21 21-4.3-4.3" />
                         </svg>
                         <input type="search" placeholder="Search anything..." class="h-[19.5px] w-[192px] bg-transparent font-Jakarta text-[13px] font-normal leading-[19.5px] text-[#0F172A]/50 outline-none placeholder:text-[#0F172A]/50">
-                        <img src="<?= asset('img/Text.png') ?>" alt="Shortcut" class="h-[19px] w-[27px] object-contain">
+                        <img src="/img/Text.png" alt="Shortcut" class="h-[19px] w-[27px] object-contain">
                     </div>
 
                     <button class="grid size-[36px] place-items-center rounded-[20px] bg-[#2563EB]/[0.07] text-[#2563EB]" aria-label="Call">
@@ -206,7 +206,7 @@
                             <span class="absolute right-[7px] top-[6px] size-[5px] rounded-full bg-orange-500"></span>
                         </span>
                     </button>
-                    <img src="<?= asset('img/user.png') ?>" alt="Profile" class="size-[36px] rounded-full object-cover">
+                    <img src="/img/user.png" alt="Profile" class="size-[36px] rounded-full object-cover">
                 </div>
             </header>
 
@@ -264,12 +264,12 @@
 
             <!-- Lead Tools Section -->
             <section class="flex h-[37.5px] w-full items-center gap-[12px]">
-                <div class="flex h-[37.5px] w-[779px] items-center gap-[8px] rounded-[20px] border border-[#E2E8F0] bg-white pt-[8px] pr-[12px] pb-[8px] pl-[12px]">
+                <div class="flex h-[37.5px] flex-1 items-center gap-[8px] rounded-[20px] border border-[#E2E8F0] bg-white pt-[8px] pr-[12px] pb-[8px] pl-[12px]">
                     <svg viewBox="0 0 24 24" class="size-3 text-[#94A3B8]" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="7" />
                         <path d="m21 21-4.3-4.3" />
                     </svg>
-                    <input type="search" placeholder="Search leads by name, phone, area..." class="h-[16px] w-[731.2px] bg-transparent font-Jakarta text-[13px] font-normal leading-none tracking-normal text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
+                    <input type="search" placeholder="Search leads by name, phone, area..." class="h-[16px] flex-1 bg-transparent font-Jakarta text-[13px] font-normal leading-none tracking-normal text-[#90A1B9] outline-none placeholder:text-[#90A1B9]">
                 </div>
                 <button class="flex h-[33px] w-[100px] items-center justify-center gap-[6px] rounded-[20px] border-[1.5px] border-[#2563EB]/20 bg-white pt-[6px] pr-[12px] pb-[6px] pl-[12px] font-Jakarta text-[12px] font-semibold leading-[18px] text-[#0F172B]">
                     <span class="h-[18px] w-[54px] text-center font-Jakarta text-[12px] font-semibold leading-[18px] tracking-normal text-[#0F172A]">All Status</span>
@@ -293,7 +293,7 @@
             <section class="h-[532px] overflow-hidden rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
                 <table class="w-full border-collapse">
                     <thead>
-                        <tr class="h-[52px] border-b border-[#E2E8F0] bg-[#F8FAFC] text-left font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-normal text-[#62748E]">
+                        <tr class="h-[41.5px] border-b border-[#E2E8F0] bg-[#F8FAFC] text-left font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-normal text-[#62748E]">
                             <th class="h-[41.5px] w-[135.23px] border-b border-[#F1F5F9] bg-[#F8FAFC] pl-[49.68px]">Lead ID</th>
                             <th class="h-[41.5px] w-[137.95px] border-b border-[#F1F5F9] bg-[#F8FAFC]">
                                 <span class="block h-[17px] w-[47px] font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-[0.55px] text-[#62748E]">Patient</span>
@@ -434,34 +434,36 @@
                                 <td class="h-[61px] w-[137.95px] border-b border-[#F8FAFC]">
                                     <div class="flex h-[37px] w-[105.95px] flex-col">
                                         <p class="m-0 h-[20px] w-[93px] font-Jakarta text-[13px] font-semibold leading-[19.5px] tracking-normal text-[#1D293D]"><?= $lead['name'] ?></p>
-                                        <p class="m-0 text-[10px] leading-[15px] text-[#94A3B8]"><?= $lead['phone'] ?></p>
+                                        <p class="m-0 h-[17px] w-[86px] font-Jakarta text-[11px] font-normal leading-[16.5px] tracking-normal text-[#90A1B9]"><?= $lead['phone'] ?></p>
                                     </div>
                                 </td>
-                                <td><span class="rounded-full bg-[#2563EB]/10 px-[8px] py-[3px] text-[10px] font-semibold text-[#2563EB]"><?= $lead['problem'] ?></span></td>
-                                <td class="text-[#62748E]"><?= $lead['area'] ?></td>
-                                <td><span class="rounded-full px-[8px] py-[3px] text-[10px] font-semibold" style="background: <?= $lead['color'] ?>1A; color: <?= $lead['color'] ?>;"><?= $lead['status'] ?></span></td>
-                                <td>
-                                    <div class="flex items-center gap-[8px]">
-                                        <span class="grid size-[24px] place-items-center rounded-full text-[10px] font-bold text-white" style="background: linear-gradient(160deg, #2563EB 0%, #F97316 100%);"><?= substr($lead['agent'], 0, 1) ?></span>
-                                        <span class="text-[#62748E]"><?= $lead['agent'] ?></span>
+                                <td class="h-[61px] w-[132.26px] border-b border-[#F8FAFC]"><span class="inline-flex h-[20.5px] w-[72px] items-center gap-[6px] rounded-full bg-[#2563EB]/[0.12] pt-[2px] pr-[10px] pb-[2px] pl-[10px]"><span class="block h-[17px] w-[52px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal text-[#2563EB]"><?= $lead['problem'] ?></span></span></td>
+                                <td class="h-[61px] w-[110.19px] border-b border-[#F8FAFC]"><span class="block h-[18px] w-[68px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#45556C]"><?= $lead['area'] ?></span></td>
+                                <td class="h-[61px] w-[133.55px] border-b border-[#F8FAFC]"><span class="inline-flex h-[20.5px] <?= $lead['status'] === 'Follow-Up' ? 'w-[89px]' : 'w-[75px]' ?> items-center gap-[6px] rounded-full pt-[2px] pr-[10px] pb-[2px] pl-[10px]" style="background: <?= $lead['color'] ?>1A;"><span class="h-[6px] w-[6px] rounded-full" style="background: <?= $lead['color'] ?>;"></span><span class="block h-[17px] w-[43px] whitespace-nowrap font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-normal" style="color: <?= $lead['color'] ?>;"><?= $lead['status'] ?></span></span></td>
+                                <td class="h-[61px] w-[144.97px] border-b border-[#F8FAFC]">
+                                    <div class="flex h-[24px] w-[112.97px] items-center gap-[8px]">
+                                        <span class="grid h-[24px] w-[24px] place-items-center rounded-full font-Jakarta text-[10px] font-bold leading-[15px] tracking-normal text-white" style="background: linear-gradient(160deg, #2563EB 0%, #F97316 100%);"><?= substr($lead['agent'], 0, 1) ?></span>
+                                        <span class="block h-[18px] w-[41px] whitespace-nowrap font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#45556C]"><?= $lead['agent'] ?></span>
                                     </div>
                                 </td>
-                                <td>
-                                    <div class="flex items-center gap-[8px]">
-                                        <div class="h-[4px] w-[72px] rounded-full bg-[#E2E8F0]">
-                                            <div class="h-[4px] rounded-full <?= $lead['score'] >= 90 ? 'bg-[#22C55E]' : ($lead['score'] >= 70 ? 'bg-[#F59E0B]' : 'bg-[#FB2C36]') ?>" style="width: <?= $lead['bar'] ?>%;"></div>
+                                <td class="h-[61px] w-[130.16px] border-b border-[#F8FAFC]">
+                                    <div class="flex h-[17px] w-[98.16px] items-center gap-[8px]">
+                                        <div class="h-[6px] w-[76.16px] rounded-full bg-[#F1F5F9]">
+                                            <div class="h-[6px] w-[70.8px] rounded-full <?= $lead['score'] >= 90 ? 'bg-[#22C55E]' : ($lead['score'] >= 70 ? 'bg-[#F59E0B]' : 'bg-[#FB2C36]') ?>"></div>
                                         </div>
-                                        <span class="text-[11px] font-semibold text-[#314158]"><?= $lead['score'] ?></span>
+                                        <span class="block h-[17px] w-[14px] font-Jakarta text-[11px] font-bold leading-[16.5px] tracking-normal text-[#45556C]"><?= $lead['score'] ?></span>
                                     </div>
                                 </td>
-                                <td class="text-[#62748E]"><?= $lead['date'] ?></td>
-                                <td>
-                                    <div class="flex items-center gap-[14px] text-[#2563EB]">
-                                        <svg class="size-[13px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
-                                            <circle cx="12" cy="12" r="3" />
-                                        </svg>
-                                        <span class="text-[#94A3B8]">...</span>
+                                <td class="h-[61px] w-[71.08px] border-b border-[#F8FAFC]"><span class="block h-[18px] w-[33px] whitespace-nowrap font-Jakarta text-[12px] font-normal leading-[18px] tracking-normal text-[#62748E]"><?= $lead['date'] ?></span></td>
+                                <td class="h-[61px] w-[101.6px] border-b border-[#F8FAFC]">
+                                    <div class="flex h-[28px] w-[69.6px] items-center gap-[4px] text-[#2563EB]">
+                                        <span class="grid h-[28px] w-[28px] place-items-center rounded-[16px]">
+                                            <svg class="size-[13px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
+                                                <circle cx="12" cy="12" r="3" />
+                                            </svg>
+                                        </span>
+                                        <span class="grid h-[28px] w-[28px] place-items-center rounded-[16px] text-[#94A3B8]">...</span>
                                     </div>
                                 </td>
                             </tr>
