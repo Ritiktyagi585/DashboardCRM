@@ -290,7 +290,7 @@
             </section>
 
             <!-- Lead Table Section -->
-            <section class="h-[532px] overflow-hidden rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
+            <section class="h-[532px] w-[1099px] rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
                 <table class="w-full border-collapse">
                     <thead>
                         <tr class="h-[41.5px] border-b border-[#E2E8F0] bg-[#F8FAFC] text-left font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-normal text-[#62748E]">
