@@ -212,7 +212,7 @@
 
             <!-- Lead Management Content Container -->
             <div class="-mx-4 flex h-[933px] w-[calc(100%+2rem)] flex-col gap-[20px] p-[24px]">
-                <div class="flex h-[666.5px] w-full flex-col gap-[16px]">
+                <div class="flex h-[885px] w-full flex-col gap-[16px]">
 
             <!-- KPI Cards Section -->
             <section class="grid h-[101px] w-full grid-cols-4 gap-[12px]">
@@ -290,7 +290,7 @@
             </section>
 
             <!-- Lead Table Section -->
-            <section class="h-[532px] w-[1099px] rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
+            <section class="h-[532px] w-[1099px] max-w-full rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
                 <table class="w-full border-collapse">
                     <thead>
                         <tr class="h-[41.5px] border-b border-[#E2E8F0] bg-[#F8FAFC] text-left font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-normal text-[#62748E]">
@@ -473,7 +473,7 @@
             </section>
 
             <!-- Pagination Section -->
-            <footer class="flex h-[32px] items-center justify-between">
+            <footer class="mt-auto flex h-[32px] items-center justify-between">
                 <p class="m-0 font-Jakarta text-[11px] font-normal leading-[16.5px] text-[#62748E]">Showing 1-8 of 1,840 leads</p>
                 <div class="flex items-center gap-[8px]">
                     <span class="grid size-[28px] place-items-center rounded-full text-[11px] font-semibold text-white" style="background: linear-gradient(160deg, #2563EB 0%, #F97316 100%);">1</span>
