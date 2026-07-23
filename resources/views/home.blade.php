@@ -508,39 +508,39 @@
 
                 <!-- Quick Actions Section -->
                 <section
-                    class="col-span-8 h-[321px] w-[711.33px] rounded-[16px] border border-white/90 bg-white/90 p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12 max-[1100px]:w-full">
+                    class="col-span-8 h-[321px] w-[711.33px] rounded-[16px] border border-white/90 bg-white/90 p-5 shadow-[0_1px_4px_rgba(0,0,0,0.06)] max-[1100px]:col-span-12 max-[1100px]:w-full max-[720px]:h-auto">
                     <!-- Quick Actions Title -->
                     <h2 class="m-0 h-[21px] w-[96px] text-[14px] font-bold leading-[21px] tracking-normal text-[#0F172B]">Quick Actions</h2>
                     <p class="m-0 mt-0 h-[17px] w-[175px] text-[11px] font-normal leading-[16.5px] tracking-normal text-[#62748E]">Click any action to launch the flow</p>
 
                     <!-- Quick Actions Buttons -->
-                    <div class="mt-[18px] flex h-[113.5px] w-[669.33px] gap-[9px] max-[720px]:w-full max-[720px]:flex-wrap">
-                        <a href="#" id="openNewLeadModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#2563EB]/15 bg-[#2563EB]/[0.08] px-4 py-3 text-center text-blue-600">
+                    <div class="mt-[18px] flex h-[113.5px] w-[669.33px] gap-[9px] max-[720px]:grid max-[720px]:h-auto max-[720px]:w-full max-[720px]:grid-cols-2">
+                        <a href="#" id="openNewLeadModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#2563EB]/15 bg-[#2563EB]/[0.08] px-4 py-3 text-center text-blue-600 max-[720px]:w-full">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#2563EB]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'plus'])</span>
                             <span class="block h-[14px] w-[53px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#2563EB]">New Lead</span>
                         </a>
 
-                        <a href="#" id="openBookAppointmentModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-orange-500/15 bg-orange-500/[0.08] px-4 py-3 text-center text-orange-500">
+                        <a href="#" id="openBookAppointmentModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-orange-500/15 bg-orange-500/[0.08] px-4 py-3 text-center text-orange-500 max-[720px]:w-full">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#F97316]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'calendar'])</span>
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#F97316]">Book Appointment</span>
                         </a>
 
-                        <a href="#" id="openCreateOrderModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#22C55E]/15 bg-[#22C55E]/[0.08] px-4 py-3 text-center text-emerald-500">
+                        <a href="#" id="openCreateOrderModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#22C55E]/15 bg-[#22C55E]/[0.08] px-4 py-3 text-center text-emerald-500 max-[720px]:w-full">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#22C55E]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'box'])</span>
                             <span class="block h-[14px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#22C55E]">Create Order</span>
                         </a>
 
-                        <a href="#" id="openAssignExecutiveModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#A855F714]/15 bg-[#A855F714]/[0.08]  px-4 py-3 text-center text-purple-500">
+                        <a href="#" id="openAssignExecutiveModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#A855F714]/15 bg-[#A855F714]/[0.08]  px-4 py-3 text-center text-purple-500 max-[720px]:w-full">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#A855F7]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'users'])</span>
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#A855F7]">Assign Executive</span>
                         </a>
 
-                        <a href="#" id="openExportReportModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#14B8A614]/15 bg-[#14B8A614]/[0.08] px-4 py-3 text-center text-teal-500">
+                        <a href="#" id="openExportReportModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#14B8A614]/15 bg-[#14B8A614]/[0.08] px-4 py-3 text-center text-teal-500 max-[720px]:w-full">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#14B8A6]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'phone'])</span>
                             <span class="block h-[28px] w-[71px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#14B8A6]">Export<br>Report</span>
                         </a>
 
-                        <a href="#" id="openSyncCrmModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#F59E0B14]/15 bg-[#F59E0B14]/[0.08] px-4 py-3 text-center text-amber-500">
+                        <a href="#" id="openSyncCrmModal" class="flex h-[97.5px] w-[104.09px] flex-col items-center justify-start gap-2 rounded-[20px] border border-[#F59E0B14]/15 bg-[#F59E0B14]/[0.08] px-4 py-3 text-center text-amber-500 max-[720px]:w-full">
                             <span class="grid h-[36px] w-[36px] place-items-center rounded-[20px] bg-[#F59E0B]/[0.12] [&_svg]:size-[14px]">@include('partials.inline-icon', ['name' => 'refresh'])</span>
                             <span class="block h-[14px] w-[54px] text-center font-Jakarta text-[11px] font-semibold leading-[13.75px] tracking-normal text-[#F59E0B]">Sync CRM</span>
                         </a>
@@ -724,6 +724,68 @@
             </div>
         </div>
     </div>
+
+    <style>
+        @media (max-width: 720px) {
+            #newLeadModal {
+                padding: 12px;
+            }
+
+            #newLeadModal > div {
+                width: 100%;
+                max-width: 100%;
+                max-height: calc(100dvh - 24px);
+                overflow-y: auto;
+            }
+
+            #leadStepOne {
+                width: 100%;
+                padding: 16px;
+            }
+
+            #leadStepOne > div:first-child,
+            #leadStepTwo > div:first-child {
+                width: 100%;
+                min-width: 0;
+                gap: 6px;
+            }
+
+            #nextLeadStep {
+                width: 100% !important;
+            }
+
+            #leadStepTwo {
+                width: 100%;
+                padding: 16px;
+            }
+
+            #leadStepTwo > div:first-child > div:nth-child(2) {
+                width: auto;
+                min-width: 0;
+                flex: 1 1 auto;
+            }
+
+            #leadStepTwo form > div {
+                max-width: 100%;
+            }
+
+            #leadStepTwo form > div:nth-child(2),
+            #leadStepTwo form > div:nth-child(3),
+            #leadStepTwo form > div:nth-child(3) > div {
+                width: 100%;
+            }
+
+            #leadStepTwo form > div:nth-child(3) > div > div {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            #leadSuccessStep p {
+                width: 100%;
+                max-width: 320px;
+                height: auto;
+            }
+        }
+    </style>
 
     <!-- Book Appointment Modal -->
     <div id="bookAppointmentModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 px-4">

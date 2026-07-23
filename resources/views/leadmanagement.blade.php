@@ -3,11 +3,11 @@
 @section('pageTitle', 'Lead Management')
 @section('content')
             <!-- Lead Management Content Container -->
-            <div class="-mx-4 flex h-[933px] w-[calc(100%+2rem)] flex-col gap-[20px] p-[24px]">
-                <div class="flex h-[885px] w-full flex-col gap-[16px]">
+            <div id="leadPageContent" class="-mx-4 flex h-[933px] w-[calc(100%+2rem)] flex-col gap-[20px] p-[24px]">
+                <div id="leadPageInner" class="flex h-[885px] w-full flex-col gap-[16px]">
 
             <!-- KPI Cards Section -->
-            <section class="grid h-[101px] w-full grid-cols-4 gap-[12px]">
+            <section id="leadKpis" class="grid h-[101px] w-full grid-cols-4 gap-[12px]">
                 <div class="h-[101px] rounded-[16px] border border-white/[0.92] bg-white/[0.88] p-[16px] shadow-[0_1px_4px_rgba(0,0,0,0.06)]">
                     <div class="h-[36px] w-full font-Jakarta text-[28px] font-bold leading-[36px] text-[#0F172B]">1840</div>
                     <div class="h-[19px] w-[231.75px] pt-[2px]">
@@ -55,7 +55,7 @@
             </section>
 
             <!-- Lead Tools Section -->
-            <section class="flex h-[37.5px] w-full items-center gap-[12px]">
+            <section id="leadTools" class="flex h-[37.5px] w-full items-center gap-[12px]">
                 <div class="flex h-[37.5px] flex-1 items-center gap-[8px] rounded-[20px] border border-[#E2E8F0] bg-white pt-[8px] pr-[12px] pb-[8px] pl-[12px]">
                     <svg viewBox="0 0 24 24" class="size-3 text-[#94A3B8]" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="7" />
@@ -82,7 +82,7 @@
             </section>
 
             <!-- Lead Table Section -->
-            <section class="h-[532px] w-[1099px] max-w-full rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
+            <section id="leadTableSection" class="h-[532px] w-[1099px] max-w-full rounded-[16px] border-t border-[#E2E8F0] bg-[#FFFFFF]">
                 <table class="w-full border-collapse">
                     <thead>
                         <tr class="h-[41.5px] border-b border-[#E2E8F0] bg-[#F8FAFC] text-left font-Jakarta text-[11px] font-bold uppercase leading-[16.5px] tracking-normal text-[#62748E]">
@@ -265,7 +265,7 @@
             </section>
 
             <!-- Pagination Section -->
-            <footer class="mt-auto flex h-[32px] w-full shrink-0 -translate-y-[10px] items-center justify-between">
+            <footer id="leadPagination" class="mt-auto flex h-[32px] w-full shrink-0 -translate-y-[10px] items-center justify-between">
                 <p class="m-0 h-[18px] w-[152px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-[0px] text-[#62748E]">Showing 1-8 of 1,840 leads</p>
                 <div class="flex items-center gap-[8px]">
                     <span class="grid size-[28px] place-items-center rounded-full text-[11px] font-semibold text-white" style="background: linear-gradient(160deg, #2563EB 0%, #F97316 100%);">1</span>
@@ -280,8 +280,8 @@
 
             <!-- Add New Lead Drawer -->
             <div id="addLeadDrawer" class="fixed inset-0 z-50 hidden bg-[#0F172A]/30">
-                <aside class="ml-auto h-[997px] w-[460px] bg-[#FFFFFF] shadow-[-8px_0_40px_rgba(0,0,0,0.15)]">
-                    <div class="flex h-[76px] w-[460px] items-start justify-between border-b border-[#F1F5F9] pt-[16px] pr-[24px] pb-[16px] pl-[24px]">
+                <aside id="addLeadDrawerPanel" class="ml-auto h-[997px] w-[460px] bg-[#FFFFFF] shadow-[-8px_0_40px_rgba(0,0,0,0.15)]">
+                    <div id="addLeadDrawerHeader" class="flex h-[76px] w-[460px] items-start justify-between border-b border-[#F1F5F9] pt-[16px] pr-[24px] pb-[16px] pl-[24px]">
                         <div class="h-[43px] w-[199.65px]">
                             <h2 class="m-0 h-[23px] w-[106px] font-Jakarta text-[15px] font-bold leading-[22.5px] tracking-[0px] text-[#0F172B]">Add New Lead</h2>
                             <p class="m-0 h-[20px] w-[199.65px] pt-[2px]"><span class="block h-[18px] w-[200px] font-Jakarta text-[12px] font-normal leading-[18px] tracking-[0px] text-[#62748E]">Fill in patient details to create a lead</span></p>
@@ -293,9 +293,9 @@
                         </button>
                     </div>
 
-                    <div class="h-[921px] w-[460px]">
-                    <div class="mx-[24px] mt-[28px] h-[365px] w-[412px]">
-                    <div class="flex h-[24px] w-[412px] items-center gap-[8px]">
+                    <div id="addLeadDrawerBody" class="h-[921px] w-[460px]">
+                    <div id="addLeadFormBlock" class="mx-[24px] mt-[28px] h-[365px] w-[412px]">
+                    <div id="addLeadSteps" class="flex h-[24px] w-[412px] items-center gap-[8px]">
                         <div class="flex h-[24px] w-[114px] items-center gap-[6px] font-Jakarta text-[10px] font-semibold text-[#2563EB]">
                             <span class="grid size-[24px] place-items-center rounded-full text-white" style="background: linear-gradient(160deg, #2563EB 0%, #F97316 100%);">1</span>
                             <span class="block h-[18px] w-[84px] font-Jakarta text-[12px] font-semibold leading-[18px] tracking-[0px] text-[#2563EB]">Patient Details</span>
@@ -307,37 +307,144 @@
                         </div>
                     </div>
 
-                    <form class="mt-[14px]" onsubmit="return false;">
-                        <div class="flex h-[277.5px] w-[412px] flex-col gap-[10px] pt-[8px]">
+                    <form onsubmit="return false;">
+                        <div id="addLeadFields" class="flex h-[277.5px] w-[412px] flex-col gap-[10px] pt-[8px]">
                         <label class="flex h-[58.5px] w-[412px] flex-col">
-                            <span class="mb-[5px] block font-Jakarta text-[10px] font-semibold leading-[15px] text-[#45556C]">Patient Name <span class="text-[#2563EB]">*</span></span>
-                            <input type="text" placeholder="e.g. Ramesh Kumar" class="h-[38px] w-full rounded-[20px] border border-[#E2E8F0] px-[14px] font-Jakarta text-[11px] text-[#0F172A] outline-none placeholder:text-[#94A3B8] focus:border-[#2563EB]">
+                            <span class="block h-[17px] w-[412px]"><span class="block h-[17px] w-[79px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-[0px] text-[#62748E]">Patient Name <span class="text-[#2563EB]">*</span></span></span>
+                            <input type="text" placeholder="e.g. Ramesh Kumar" class="h-[41.5px] w-[412px] rounded-[20px] border border-[#E2E8F0] px-[12px] font-Jakarta text-[13px] font-normal leading-[100%] tracking-[0px] text-[#0F172A] outline-none placeholder:text-[#90A1B9] focus:border-[#2563EB]">
                         </label>
-                        <label class="block">
-                            <span class="mb-[5px] block font-Jakarta text-[10px] font-semibold leading-[15px] text-[#45556C]">Mobile Number <span class="text-[#2563EB]">*</span></span>
-                            <input type="tel" placeholder="+91 98765 43210" class="h-[38px] w-full rounded-[20px] border border-[#E2E8F0] px-[14px] font-Jakarta text-[11px] text-[#0F172A] outline-none placeholder:text-[#94A3B8] focus:border-[#2563EB]">
+                        <label class="flex h-[70.5px] w-[412px] flex-col pt-[12px]">
+                            <span class="mb-[4px] block h-[17px] w-[412px]"><span class="block h-[17px] w-[89px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-[0px] text-[#62748E]">Mobile Number <span class="text-[#2563EB]">*</span></span></span>
+                            <input type="tel" placeholder="+91 98765 43210" class="h-[37.5px] w-[412px] rounded-[20px] border border-[#E2E8F0] bg-[#FFFFFF] py-[8px] px-[12px] font-Jakarta text-[13px] font-normal leading-[100%] tracking-[0px] text-[#0F172A] outline-none placeholder:text-[#90A1B9] focus:border-[#2563EB]">
                         </label>
-                        <label class="block">
-                            <span class="mb-[5px] block font-Jakarta text-[10px] font-semibold leading-[15px] text-[#45556C]">Area / Locality <span class="text-[#2563EB]">*</span></span>
-                            <input type="text" placeholder="e.g. Banjara Hills, Hyderabad" class="h-[38px] w-full rounded-[20px] border border-[#E2E8F0] px-[14px] font-Jakarta text-[11px] text-[#0F172A] outline-none placeholder:text-[#94A3B8] focus:border-[#2563EB]">
+                        <label class="flex h-[70.5px] w-[412px] flex-col pt-[12px]">
+                            <span class="mb-[4px] block h-[17px] w-[412px]"><span class="block h-[17px] w-[84px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-[0px] text-[#62748E]">Area / Locality <span class="text-[#2563EB]">*</span></span></span>
+                            <input type="text" placeholder="e.g. Banjara Hills, Hyderabad" class="h-[37.5px] w-[412px] rounded-[20px] border border-[#E2E8F0] bg-[#FFFFFF] py-[8px] px-[12px] font-Jakarta text-[13px] font-normal leading-[100%] tracking-[0px] text-[#0F172A] outline-none placeholder:text-[#90A1B9] focus:border-[#2563EB]">
                         </label>
-                        <div class="grid grid-cols-2 gap-[12px]">
-                            <label class="block">
-                                <span class="mb-[5px] block font-Jakarta text-[10px] font-semibold leading-[15px] text-[#45556C]">Age</span>
-                                <input type="number" placeholder="e.g. 58" class="h-[38px] w-full rounded-[20px] border border-[#E2E8F0] px-[14px] font-Jakarta text-[11px] text-[#0F172A] outline-none placeholder:text-[#94A3B8] focus:border-[#2563EB]">
+                        <div id="ageGenderRow" class="grid h-[58px] w-[412px] grid-cols-2 gap-[12px]">
+                            <label class="flex h-[58px] w-[200px] flex-col">
+                                <span class="mb-[3.5px] block h-[17px] w-[200px]"><span class="block h-[17px] w-[22px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-[0px] text-[#62748E]">Age</span></span>
+                                <input type="number" placeholder="e.g. 58" class="h-[37.5px] w-[200px] rounded-[20px] border border-[#E2E8F0] bg-[#FFFFFF] py-[8px] px-[12px] font-Jakarta text-[13px] font-normal leading-[100%] tracking-[0px] text-[#0F172A] outline-none placeholder:text-[#90A1B9] focus:border-[#2563EB]">
                             </label>
-                            <label class="block">
-                                <span class="mb-[5px] block font-Jakarta text-[10px] font-semibold leading-[15px] text-[#45556C]">Gender</span>
-                                <input type="text" class="h-[38px] w-full rounded-[20px] border border-[#E2E8F0] px-[14px] font-Jakarta text-[11px] text-[#0F172A] outline-none focus:border-[#2563EB]">
+                            <label class="flex h-[58px] w-[200px] flex-col">
+                                <span class="block h-[21px] w-[200px]"><span class="block h-[17px] w-[41px] font-Jakarta text-[11px] font-semibold leading-[16.5px] tracking-[0px] text-[#62748E]">Gender</span></span>
+                                <select class="h-[36.5px] w-[200px] rounded-[20px] border border-[#E2E8F0] bg-[#FFFFFF] px-[12px] font-Jakarta text-[11px] text-[#0F172A] outline-none focus:border-[#2563EB]">
+                                    <option value=""></option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </label>
                         </div>
                         </div>
-                        <button type="submit" class="mt-[18px] flex h-[36px] w-full items-center justify-center rounded-[20px] font-Jakarta text-[11px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">Next Step →</button>
+                        <div id="addLeadSubmitRow" class="flex h-[63.5px] w-[412px] items-end">
+                            <button type="submit" class="flex h-[36px] w-full items-center justify-center rounded-[20px] font-Jakarta text-[11px] font-semibold text-white" style="background: linear-gradient(160deg, #4B68D8 0%, #7B6E9D 38%, #A66F74 70%, #F97316 100%);">Next Step →</button>
+                        </div>
                     </form>
                     </div>
                     </div>
                 </aside>
             </div>
+
+            <style>
+                @media (max-width: 720px) {
+                    #leadPageContent {
+                        width: 100%;
+                        height: auto;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding: 12px 0;
+                    }
+
+                    #leadPageInner {
+                        height: auto;
+                    }
+
+                    #leadKpis {
+                        height: auto;
+                        grid-template-columns: minmax(0, 1fr);
+                    }
+
+                    #leadTools {
+                        height: auto;
+                        flex-wrap: wrap;
+                    }
+
+                    #leadTools > div:first-child {
+                        flex-basis: 100%;
+                    }
+
+                    #leadTableSection {
+                        width: 100%;
+                        max-width: 100%;
+                        overflow-x: auto;
+                        overflow-y: hidden;
+                    }
+
+                    #leadTableSection table {
+                        width: 1099px;
+                        min-width: 1099px;
+                    }
+
+                    #leadPagination {
+                        height: auto;
+                        min-height: 32px;
+                        transform: none;
+                        flex-wrap: wrap;
+                        gap: 12px;
+                    }
+
+                    #addLeadDrawerPanel {
+                        width: 100vw;
+                        max-width: 100vw;
+                        height: 100dvh;
+                        overflow-y: auto;
+                    }
+
+                    #addLeadDrawerHeader,
+                    #addLeadDrawerBody {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+
+                    #addLeadDrawerBody {
+                        height: calc(100dvh - 76px);
+                    }
+
+                    #addLeadFormBlock {
+                        width: calc(100% - 32px);
+                        max-width: calc(100% - 32px);
+                        margin-left: 16px;
+                        margin-right: 16px;
+                    }
+
+                    #addLeadSteps,
+                    #addLeadFields,
+                    #ageGenderRow,
+                    #addLeadSubmitRow {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+
+                    #addLeadSteps > div:nth-child(2) {
+                        width: auto;
+                        min-width: 0;
+                        flex: 1 1 auto;
+                    }
+
+                    #addLeadFields label,
+                    #addLeadFields label > span,
+                    #addLeadFields input,
+                    #addLeadFields select {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+
+                    #ageGenderRow {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+                }
+            </style>
 
             <script>
                 const addLeadDrawer = document.getElementById('addLeadDrawer');

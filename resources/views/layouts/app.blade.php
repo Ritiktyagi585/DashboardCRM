@@ -24,11 +24,11 @@
     <!-- Page Layout Section -->
     <div class="grid min-h-[997px] grid-cols-[240px_minmax(0,1fr)] overflow-hidden max-[1100px]:grid-cols-[86px_minmax(0,1fr)] max-[720px]:block">
         <!-- Sidebar Section -->
-        <aside
+        <aside id="appSidebar"
             class="flex h-[997px] w-[240px] flex-col gap-3.5 border-r border-[#2563EB]/10 bg-white/[0.96] px-[8px] pt-0 max-[1100px]:w-[86px] max-[1100px]:px-2.5 max-[720px]:h-auto max-[720px]:w-full max-[720px]:flex-row max-[720px]:items-center max-[720px]:overflow-x-auto max-[720px]:border-r-0 max-[720px]:border-b">
 
             <!-- Logo Section -->
-            <div class="-mx-[8px] flex h-[64px] w-[239px] items-center gap-[8px] border-b border-[#2563EB]/10 pr-[16px] pl-[16px]">
+            <div class="-mx-[8px] flex h-[64px] w-[239px] items-center gap-[8px] border-b border-[#2563EB]/10 pr-[16px] pl-[16px] max-[720px]:w-[calc(100%+16px)]">
                 <img src="/img/NorHealLogo.png" alt="NorHeal Logo" class="h-[32px] w-auto object-contain">
 
                 <div
@@ -37,10 +37,18 @@
                         <path d="m15 18-6-6 6-6" />
                     </svg>
                 </div>
+                <button type="button" id="mobileSidebarToggle"
+                    class="ml-auto hidden size-[32px] place-items-center rounded-full bg-[#F1F5FF] text-[#2563EB] max-[720px]:grid"
+                    aria-label="Open sidebar menu" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                </button>
             </div>
 
             <!-- Sidebar Menu Section -->
-            <nav class="flex-1 overflow-auto pr-0.5 max-[720px]:flex max-[720px]:overflow-visible">
+            <nav id="sidebarNav" class="flex-1 overflow-auto pr-0.5 max-[720px]:hidden">
                 @php
                     $dashboardActive = request()->routeIs('dashboard') || request()->is('/');
                     $leadManagementActive = request()->routeIs('lead-management') || request()->is('lead-management');
@@ -148,7 +156,7 @@
         <main class="min-w-0 bg-[#F0F4FF] px-4 pb-6 pt-0 max-[720px]:p-3">
             <!-- Topbar Section -->
             <header
-                class="-mx-4 mb-4 flex h-[64px] w-[calc(100%+2rem)] items-center justify-between border-b border-[#2563EB]/10 bg-white/95 pr-[24px] pl-[24px] max-[720px]:h-auto max-[720px]:flex-col max-[720px]:items-stretch max-[720px]:py-3">
+                class="-mx-4 mb-4 flex h-[64px] w-[calc(100%+2rem)] items-center justify-between border-b border-[#2563EB]/10 bg-white/95 pr-[24px] pl-[24px] max-[720px]:mx-[-12px] max-[720px]:h-auto max-[720px]:w-[calc(100%+24px)] max-[720px]:flex-col max-[720px]:items-stretch max-[720px]:gap-3 max-[720px]:px-3 max-[720px]:py-3">
                 <!-- Topbar Title Section -->
                 <div>
                     <div class="h-6 w-[181.73px]">
@@ -163,7 +171,7 @@
                 </div>
 
                 <!-- Topbar Right Actions Section -->
-                <div class="flex h-[37.5px] w-[370px] items-center gap-[12px]">
+                <div class="flex h-[37.5px] w-[370px] items-center gap-[12px] max-[720px]:w-full">
                     <!-- Search Box Section -->
                     <div
                         class="flex h-[37.5px] w-[274px] items-center gap-[8px] rounded-[20px] border border-[#E2E8F0] bg-[#FFFFFF] pt-[8px] pr-[12px] pb-[8px] pl-[12px] text-left text-[9px] font-semibold text-[#9aacc2] max-[720px]:w-full">
@@ -201,5 +209,54 @@
         </main>
     </div>
     @stack('scripts')
+    <style>
+        @media (max-width: 720px) {
+            #appSidebar.mobile-open {
+                flex-direction: column;
+                align-items: stretch;
+                overflow: visible;
+            }
+
+            #sidebarNav.mobile-open {
+                display: block;
+                width: 100%;
+                max-height: calc(100dvh - 64px);
+                overflow-y: auto;
+                padding: 8px 0 12px;
+            }
+
+            #sidebarNav.mobile-open p {
+                display: block;
+            }
+
+            #sidebarNav.mobile-open a span {
+                display: block;
+            }
+
+            #sidebarNav.mobile-open a {
+                width: 100%;
+                justify-content: flex-start;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #sidebarNav.mobile-open > div {
+                display: block;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+    <script>
+        const mobileSidebarToggle = document.getElementById('mobileSidebarToggle');
+        const appSidebar = document.getElementById('appSidebar');
+        const sidebarNav = document.getElementById('sidebarNav');
+
+        mobileSidebarToggle?.addEventListener('click', () => {
+            const isOpen = sidebarNav.classList.toggle('mobile-open');
+            appSidebar.classList.toggle('mobile-open', isOpen);
+            mobileSidebarToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+    </script>
 </body>
 </html>
